@@ -309,9 +309,14 @@
 					that.$toast.add({severity:'success', summary: response.data.message, life: 3000});
 				})
 				.catch(function (error) {
-					that.errors = error.response.data.errors;
+					//that.errors = error.response.data.errors;
 
-					that.$toast.add({severity:'error', summary: error.message, detail:error.response.data.errors, life: 3000});
+					//that.$toast.add({severity:'error', summary: error.message, detail:error.response.data.errors, life: 3000});
+					
+					let detail = error.response.data.errors; that.errors = error.response.data.errors;
+                    if(that.errors === undefined) detail = error.response.data.message; //not validation message
+
+                    that.$toast.add({severity:'error', summary: error.message, detail:detail});
 				});
 
 			}
