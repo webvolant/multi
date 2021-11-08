@@ -37,7 +37,7 @@ class ProductController extends Controller
             'gender'=>Property::getProperty('gender'),
             'glass'=>Property::getProperty('glass'),
             'numbersface'=>Property::getProperty('numbersface'),
-            'strapcolor'=>Property::getProperty('strapcolor'),
+            'strapcolor'=>Property::getProperty('color'),
             'strapmaterial'=>Property::getProperty('material'),
             'type'=>Property::getProperty('type'),
             'waterresistant'=>Property::getProperty('waterresistant'),
@@ -52,7 +52,7 @@ class ProductController extends Controller
 
     public function store(Request $request)
     {
-        //dd($request->all());
+        dd($request->all());
 
         $data = $request->validate([
             'title' => 'required|max:255',
@@ -76,7 +76,10 @@ class ProductController extends Controller
             'strapmaterial_id' => '',
             'type_id' => '',
             'waterresistant_id' => '',
-            'state_id' => 'required',
+            'state_id' => '',
+
+            'model'=>'',
+            'year'=>'',
         ]);
 
         $product = Product::findOrFail($request->id);
@@ -143,7 +146,7 @@ class ProductController extends Controller
             'title' => 'required|max:255',
             'slug' => 'required|max:255',
             'functions' => '',
-            'material_id' => 'required',
+            'material_id' => '',
             'condition_id' => 'required',
             'others' => '',
 
@@ -161,7 +164,10 @@ class ProductController extends Controller
             'strapmaterial_id' => '',
             'type_id' => '',
             'waterresistant_id' => '',
-            'state_id' => 'required',
+            'state_id' => '',
+
+            'model'=>'',
+            'year'=>'',
         ]);
 
         $product = Product::findOrFail($request->id);

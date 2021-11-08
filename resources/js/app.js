@@ -44,12 +44,20 @@ import Checkbox from 'primevue/checkbox';
 import InputText from 'primevue/inputtext';
 import Dropdown from 'primevue/dropdown';
 
+import Accordion from 'primevue/accordion';
+import AccordionTab from 'primevue/accordiontab';
+
+
 Vue.use(PrimeVue);
 Vue.use(ToastService);
 Vue.component('prime-checkbox', Checkbox);
 Vue.component('prime-inputtext', InputText);
 Vue.component('prime-toast', Toast);
 Vue.component('prime-dropdown', Dropdown);
+Vue.component('prime-accordion', Accordion);
+Vue.component('prime-accordiontab', AccordionTab);
+
+
 
 
 //import useVuelidate from '@vuelidate/core'

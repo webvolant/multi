@@ -2111,6 +2111,191 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: ['bezelmaterial', 'brand', 'clasp', 'claspmaterial', 'deliveryset', 'deliverytime', 'face', 'gender', 'glass', 'numbersface', 'strapcolor', 'strapmaterial', 'waterresistant', 'type', 'functions', 'others', 'item', 'material', 'functions', 'condition', 'state'],
   data: function data() {
@@ -2129,28 +2314,27 @@ __webpack_require__.r(__webpack_exports__);
     },*/
   mounted: function mounted() {
     //this.getPlaceholders();
-    if (Object.keys(this.item).length === 0) {
-      this.data = {
-        title: '',
-        slug: '',
 
-        /*properties: {
-         functions: [],
-         material: [],
-        },*/
-        functions: [],
-        others: [],
-        material_id: null,
-        condition_id: null
-      };
-      console.log('new');
-    } else {
-      this.data = this.item; //this.data.properties = [];
-      //this.data.properties = JSON.parse(this.item.properties);
+    /*if(Object.keys(this.item).length === 0){
+    	this.data = {
+    		title:'',
+    		slug:'',
+    		//properties: {
+           //  functions: [],
+           //  material: [],
+           //},
+    		functions: [],
+    		others: [],
+    		material_id: null,
+    		condition_id: null,
+    	};
+    	console.log('new');
+    }else{*/
+    this.data = this.item; //this.data.properties = [];
+    //this.data.properties = JSON.parse(this.item.properties);
 
-      this.data.functions = JSON.parse(this.item.functions);
-      console.log(this.data);
-    }
+    this.data.functions = JSON.parse(this.item.functions);
+    console.log(this.data); //}
   },
   methods: {
     hasErrorText: function hasErrorText(key) {
@@ -2220,7 +2404,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var primevue_checkbox__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! primevue/checkbox */ "./node_modules/primevue/checkbox/index.js");
 /* harmony import */ var primevue_inputtext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! primevue/inputtext */ "./node_modules/primevue/inputtext/index.js");
 /* harmony import */ var primevue_dropdown__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! primevue/dropdown */ "./node_modules/primevue/dropdown/index.js");
-/* harmony import */ var _plugins_mixin__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./plugins/mixin */ "./resources/js/plugins/mixin.js");
+/* harmony import */ var primevue_accordion__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! primevue/accordion */ "./node_modules/primevue/accordion/index.js");
+/* harmony import */ var primevue_accordiontab__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! primevue/accordiontab */ "./node_modules/primevue/accordiontab/index.js");
+/* harmony import */ var _plugins_mixin__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./plugins/mixin */ "./resources/js/plugins/mixin.js");
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -2263,12 +2449,16 @@ Vue.component('product-form', __webpack_require__(/*! ./components/ProductForm.v
 
 
 
+
+
 Vue.use(primevue_config__WEBPACK_IMPORTED_MODULE_1__["default"]);
 Vue.use(primevue_toastservice__WEBPACK_IMPORTED_MODULE_2__["default"]);
 Vue.component('prime-checkbox', primevue_checkbox__WEBPACK_IMPORTED_MODULE_4__["default"]);
 Vue.component('prime-inputtext', primevue_inputtext__WEBPACK_IMPORTED_MODULE_5__["default"]);
 Vue.component('prime-toast', primevue_toast__WEBPACK_IMPORTED_MODULE_3__["default"]);
-Vue.component('prime-dropdown', primevue_dropdown__WEBPACK_IMPORTED_MODULE_6__["default"]); //import useVuelidate from '@vuelidate/core'
+Vue.component('prime-dropdown', primevue_dropdown__WEBPACK_IMPORTED_MODULE_6__["default"]);
+Vue.component('prime-accordion', primevue_accordion__WEBPACK_IMPORTED_MODULE_7__["default"]);
+Vue.component('prime-accordiontab', primevue_accordiontab__WEBPACK_IMPORTED_MODULE_8__["default"]); //import useVuelidate from '@vuelidate/core'
 //import { required, email } from '@vuelidate/validators'
 //Vue.use(useVuelidate);
 
@@ -2352,6 +2542,30 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, ".p-grid {\n  display: flex;\n  flex-wrap: wrap;\n  margin-right: -0.5rem;\n  margin-left: -0.5rem;\n  margin-top: -0.5rem;\n}\n\n.p-grid > .p-col,\n.p-grid > [class*=p-col] {\n  box-sizing: border-box;\n}\n\n.p-nogutter {\n  margin-right: 0;\n  margin-left: 0;\n  margin-top: 0;\n}\n\n.p-nogutter > .p-col,\n.p-nogutter > [class*=p-col-] {\n  padding: 0;\n}\n\n.p-col {\n  flex-grow: 1;\n  flex-basis: 0;\n  padding: 0.5rem;\n}\n\n.p-col-fixed {\n  flex: 0 0 auto;\n  padding: 0.5rem;\n}\n\n.p-col-1,\n.p-col-2,\n.p-col-3,\n.p-col-4,\n.p-col-5,\n.p-col-6,\n.p-col-7,\n.p-col-8,\n.p-col-9,\n.p-col-10,\n.p-col-11,\n.p-col-12 {\n  flex: 0 0 auto;\n  padding: 0.5rem;\n}\n\n.p-col-1 {\n  width: 8.3333%;\n}\n\n.p-col-2 {\n  width: 16.6667%;\n}\n\n.p-col-3 {\n  width: 25%;\n}\n\n.p-col-4 {\n  width: 33.3333%;\n}\n\n.p-col-5 {\n  width: 41.6667%;\n}\n\n.p-col-6 {\n  width: 50%;\n}\n\n.p-col-7 {\n  width: 58.3333%;\n}\n\n.p-col-8 {\n  width: 66.6667%;\n}\n\n.p-col-9 {\n  width: 75%;\n}\n\n.p-col-10 {\n  width: 83.3333%;\n}\n\n.p-col-11 {\n  width: 91.6667%;\n}\n\n.p-col-12 {\n  width: 100%;\n}\n\n.p-offset-12 {\n  margin-left: 100%;\n}\n\n.p-offset-11 {\n  margin-left: 91.66666667%;\n}\n\n.p-offset-10 {\n  margin-left: 83.33333333%;\n}\n\n.p-offset-9 {\n  margin-left: 75%;\n}\n\n.p-offset-8 {\n  margin-left: 66.66666667%;\n}\n\n.p-offset-7 {\n  margin-left: 58.33333333%;\n}\n\n.p-offset-6 {\n  margin-left: 50%;\n}\n\n.p-offset-5 {\n  margin-left: 41.66666667%;\n}\n\n.p-offset-4 {\n  margin-left: 33.33333333%;\n}\n\n.p-offset-3 {\n  margin-left: 25%;\n}\n\n.p-offset-2 {\n  margin-left: 16.66666667%;\n}\n\n.p-offset-1 {\n  margin-left: 8.33333333%;\n}\n\n.p-offset-0 {\n  margin-left: 0%;\n}\n\n.p-sm-1,\n.p-sm-2,\n.p-sm-3,\n.p-sm-4,\n.p-sm-5,\n.p-sm-6,\n.p-sm-7,\n.p-sm-8,\n.p-sm-9,\n.p-sm-10,\n.p-sm-11,\n.p-sm-12,\n.p-md-1,\n.p-md-2,\n.p-md-3,\n.p-md-4,\n.p-md-5,\n.p-md-6,\n.p-md-7,\n.p-md-8,\n.p-md-9,\n.p-md-10,\n.p-md-11,\n.p-md-12,\n.p-lg-1,\n.p-lg-2,\n.p-lg-3,\n.p-lg-4,\n.p-lg-5,\n.p-lg-6,\n.p-lg-7,\n.p-lg-8,\n.p-lg-9,\n.p-lg-10,\n.p-lg-11,\n.p-lg-12,\n.p-xl-1,\n.p-xl-2,\n.p-xl-3,\n.p-xl-4,\n.p-xl-5,\n.p-xl-6,\n.p-xl-7,\n.p-xl-8,\n.p-xl-9,\n.p-xl-10,\n.p-xl-11,\n.p-xl-12 {\n  padding: 0.5rem;\n}\n\n.p-col-nogutter {\n  padding: 0;\n}\n\n@media screen and (min-width: 576px) {\n  .p-sm-1,\n.p-sm-2,\n.p-sm-3,\n.p-sm-4,\n.p-sm-5,\n.p-sm-6,\n.p-sm-7,\n.p-sm-8,\n.p-sm-9,\n.p-sm-10,\n.p-sm-11,\n.p-sm-12 {\n    flex: 0 0 auto;\n  }\n\n  .p-sm-1 {\n    width: 8.3333%;\n  }\n\n  .p-sm-2 {\n    width: 16.6667%;\n  }\n\n  .p-sm-3 {\n    width: 25%;\n  }\n\n  .p-sm-4 {\n    width: 33.3333%;\n  }\n\n  .p-sm-5 {\n    width: 41.6667%;\n  }\n\n  .p-sm-6 {\n    width: 50%;\n  }\n\n  .p-sm-7 {\n    width: 58.3333%;\n  }\n\n  .p-sm-8 {\n    width: 66.6667%;\n  }\n\n  .p-sm-9 {\n    width: 75%;\n  }\n\n  .p-sm-10 {\n    width: 83.3333%;\n  }\n\n  .p-sm-11 {\n    width: 91.6667%;\n  }\n\n  .p-sm-12 {\n    width: 100%;\n  }\n\n  .p-sm-offset-12 {\n    margin-left: 100%;\n  }\n\n  .p-sm-offset-11 {\n    margin-left: 91.66666667%;\n  }\n\n  .p-sm-offset-10 {\n    margin-left: 83.33333333%;\n  }\n\n  .p-sm-offset-9 {\n    margin-left: 75%;\n  }\n\n  .p-sm-offset-8 {\n    margin-left: 66.66666667%;\n  }\n\n  .p-sm-offset-7 {\n    margin-left: 58.33333333%;\n  }\n\n  .p-sm-offset-6 {\n    margin-left: 50%;\n  }\n\n  .p-sm-offset-5 {\n    margin-left: 41.66666667%;\n  }\n\n  .p-sm-offset-4 {\n    margin-left: 33.33333333%;\n  }\n\n  .p-sm-offset-3 {\n    margin-left: 25%;\n  }\n\n  .p-sm-offset-2 {\n    margin-left: 16.66666667%;\n  }\n\n  .p-sm-offset-1 {\n    margin-left: 8.33333333%;\n  }\n\n  .p-sm-offset-0 {\n    margin-left: 0%;\n  }\n}\n@media screen and (min-width: 768px) {\n  .p-md-1,\n.p-md-2,\n.p-md-3,\n.p-md-4,\n.p-md-5,\n.p-md-6,\n.p-md-7,\n.p-md-8,\n.p-md-9,\n.p-md-10,\n.p-md-11,\n.p-md-12 {\n    flex: 0 0 auto;\n  }\n\n  .p-md-1 {\n    width: 8.3333%;\n  }\n\n  .p-md-2 {\n    width: 16.6667%;\n  }\n\n  .p-md-3 {\n    width: 25%;\n  }\n\n  .p-md-4 {\n    width: 33.3333%;\n  }\n\n  .p-md-5 {\n    width: 41.6667%;\n  }\n\n  .p-md-6 {\n    width: 50%;\n  }\n\n  .p-md-7 {\n    width: 58.3333%;\n  }\n\n  .p-md-8 {\n    width: 66.6667%;\n  }\n\n  .p-md-9 {\n    width: 75%;\n  }\n\n  .p-md-10 {\n    width: 83.3333%;\n  }\n\n  .p-md-11 {\n    width: 91.6667%;\n  }\n\n  .p-md-12 {\n    width: 100%;\n  }\n\n  .p-md-offset-12 {\n    margin-left: 100%;\n  }\n\n  .p-md-offset-11 {\n    margin-left: 91.66666667%;\n  }\n\n  .p-md-offset-10 {\n    margin-left: 83.33333333%;\n  }\n\n  .p-md-offset-9 {\n    margin-left: 75%;\n  }\n\n  .p-md-offset-8 {\n    margin-left: 66.66666667%;\n  }\n\n  .p-md-offset-7 {\n    margin-left: 58.33333333%;\n  }\n\n  .p-md-offset-6 {\n    margin-left: 50%;\n  }\n\n  .p-md-offset-5 {\n    margin-left: 41.66666667%;\n  }\n\n  .p-md-offset-4 {\n    margin-left: 33.33333333%;\n  }\n\n  .p-md-offset-3 {\n    margin-left: 25%;\n  }\n\n  .p-md-offset-2 {\n    margin-left: 16.66666667%;\n  }\n\n  .p-md-offset-1 {\n    margin-left: 8.33333333%;\n  }\n\n  .p-md-offset-0 {\n    margin-left: 0%;\n  }\n}\n@media screen and (min-width: 992px) {\n  .p-lg-1,\n.p-lg-2,\n.p-lg-3,\n.p-lg-4,\n.p-lg-5,\n.p-lg-6,\n.p-lg-7,\n.p-lg-8,\n.p-lg-9,\n.p-lg-10,\n.p-lg-11,\n.p-lg-12 {\n    flex: 0 0 auto;\n  }\n\n  .p-lg-1 {\n    width: 8.3333%;\n  }\n\n  .p-lg-2 {\n    width: 16.6667%;\n  }\n\n  .p-lg-3 {\n    width: 25%;\n  }\n\n  .p-lg-4 {\n    width: 33.3333%;\n  }\n\n  .p-lg-5 {\n    width: 41.6667%;\n  }\n\n  .p-lg-6 {\n    width: 50%;\n  }\n\n  .p-lg-7 {\n    width: 58.3333%;\n  }\n\n  .p-lg-8 {\n    width: 66.6667%;\n  }\n\n  .p-lg-9 {\n    width: 75%;\n  }\n\n  .p-lg-10 {\n    width: 83.3333%;\n  }\n\n  .p-lg-11 {\n    width: 91.6667%;\n  }\n\n  .p-lg-12 {\n    width: 100%;\n  }\n\n  .p-lg-offset-12 {\n    margin-left: 100%;\n  }\n\n  .p-lg-offset-11 {\n    margin-left: 91.66666667%;\n  }\n\n  .p-lg-offset-10 {\n    margin-left: 83.33333333%;\n  }\n\n  .p-lg-offset-9 {\n    margin-left: 75%;\n  }\n\n  .p-lg-offset-8 {\n    margin-left: 66.66666667%;\n  }\n\n  .p-lg-offset-7 {\n    margin-left: 58.33333333%;\n  }\n\n  .p-lg-offset-6 {\n    margin-left: 50%;\n  }\n\n  .p-lg-offset-5 {\n    margin-left: 41.66666667%;\n  }\n\n  .p-lg-offset-4 {\n    margin-left: 33.33333333%;\n  }\n\n  .p-lg-offset-3 {\n    margin-left: 25%;\n  }\n\n  .p-lg-offset-2 {\n    margin-left: 16.66666667%;\n  }\n\n  .p-lg-offset-1 {\n    margin-left: 8.33333333%;\n  }\n\n  .p-lg-offset-0 {\n    margin-left: 0%;\n  }\n}\n@media screen and (min-width: 1200px) {\n  .p-xl-1,\n.p-xl-2,\n.p-xl-3,\n.p-xl-4,\n.p-xl-5,\n.p-xl-6,\n.p-xl-7,\n.p-xl-8,\n.p-xl-9,\n.p-xl-10,\n.p-xl-11,\n.p-xl-12 {\n    flex: 0 0 auto;\n  }\n\n  .p-xl-1 {\n    width: 8.3333%;\n  }\n\n  .p-xl-2 {\n    width: 16.6667%;\n  }\n\n  .p-xl-3 {\n    width: 25%;\n  }\n\n  .p-xl-4 {\n    width: 33.3333%;\n  }\n\n  .p-xl-5 {\n    width: 41.6667%;\n  }\n\n  .p-xl-6 {\n    width: 50%;\n  }\n\n  .p-xl-7 {\n    width: 58.3333%;\n  }\n\n  .p-xl-8 {\n    width: 66.6667%;\n  }\n\n  .p-xl-9 {\n    width: 75%;\n  }\n\n  .p-xl-10 {\n    width: 83.3333%;\n  }\n\n  .p-xl-11 {\n    width: 91.6667%;\n  }\n\n  .p-xl-12 {\n    width: 100%;\n  }\n\n  .p-xl-offset-12 {\n    margin-left: 100%;\n  }\n\n  .p-xl-offset-11 {\n    margin-left: 91.66666667%;\n  }\n\n  .p-xl-offset-10 {\n    margin-left: 83.33333333%;\n  }\n\n  .p-xl-offset-9 {\n    margin-left: 75%;\n  }\n\n  .p-xl-offset-8 {\n    margin-left: 66.66666667%;\n  }\n\n  .p-xl-offset-7 {\n    margin-left: 58.33333333%;\n  }\n\n  .p-xl-offset-6 {\n    margin-left: 50%;\n  }\n\n  .p-xl-offset-5 {\n    margin-left: 41.66666667%;\n  }\n\n  .p-xl-offset-4 {\n    margin-left: 33.33333333%;\n  }\n\n  .p-xl-offset-3 {\n    margin-left: 25%;\n  }\n\n  .p-xl-offset-2 {\n    margin-left: 16.66666667%;\n  }\n\n  .p-xl-offset-1 {\n    margin-left: 8.33333333%;\n  }\n\n  .p-xl-offset-0 {\n    margin-left: 0%;\n  }\n}\n.p-justify-start {\n  justify-content: flex-start;\n}\n\n.p-justify-end {\n  justify-content: flex-end;\n}\n\n.p-justify-center {\n  justify-content: center;\n}\n\n.p-justify-between {\n  justify-content: space-between;\n}\n\n.p-justify-around {\n  justify-content: space-around;\n}\n\n.p-justify-even {\n  justify-content: space-evenly;\n}\n\n.p-align-start {\n  align-items: flex-start;\n}\n\n.p-align-end {\n  align-items: flex-end;\n}\n\n.p-align-center {\n  align-items: center;\n}\n\n.p-align-baseline {\n  align-items: baseline;\n}\n\n.p-align-stretch {\n  align-items: stretch;\n}\n\n.p-col-align-start {\n  align-self: flex-start;\n}\n\n.p-col-align-end {\n  align-self: flex-end;\n}\n\n.p-col-align-center {\n  -ms-grid-row-align: center;\n  align-self: center;\n}\n\n.p-col-align-baseline {\n  align-self: baseline;\n}\n\n.p-col-align-stretch {\n  -ms-grid-row-align: stretch;\n  align-self: stretch;\n}\n\n.p-dir-row {\n  flex-direction: row;\n}\n\n.p-dir-rev {\n  flex-direction: row-reverse;\n}\n\n.p-dir-col {\n  flex-direction: column;\n}\n\n.p-dir-col-rev {\n  flex-direction: column-reverse;\n}\n\n.p-dir-col > .p-col,\n.p-dir-col-rev > .p-col {\n  flex-basis: auto;\n}\n\n.p-col-order-first {\n  order: -1;\n}\n\n.p-col-order-last {\n  order: 13;\n}\n\n.p-col-order-0 {\n  order: 0;\n}\n\n.p-col-order-1 {\n  order: 1;\n}\n\n.p-col-order-2 {\n  order: 2;\n}\n\n.p-col-order-3 {\n  order: 3;\n}\n\n.p-col-order-4 {\n  order: 4;\n}\n\n.p-col-order-5 {\n  order: 5;\n}\n\n.p-col-order-6 {\n  order: 6;\n}\n\n.p-col-order-7 {\n  order: 7;\n}\n\n.p-col-order-8 {\n  order: 8;\n}\n\n.p-col-order-9 {\n  order: 9;\n}\n\n.p-col-order-10 {\n  order: 10;\n}\n\n.p-col-order-11 {\n  order: 11;\n}\n\n.p-col-order-12 {\n  order: 12;\n}\n\n@media screen and (min-width: 576px) {\n  .p-sm-order-first {\n    order: -1;\n  }\n\n  .p-sm-order-last {\n    order: 13;\n  }\n\n  .p-sm-order-0 {\n    order: 0;\n  }\n\n  .p-sm-order-1 {\n    order: 1;\n  }\n\n  .p-sm-order-2 {\n    order: 2;\n  }\n\n  .p-sm-order-3 {\n    order: 3;\n  }\n\n  .p-sm-order-4 {\n    order: 4;\n  }\n\n  .p-sm-order-5 {\n    order: 5;\n  }\n\n  .p-sm-order-6 {\n    order: 6;\n  }\n\n  .p-sm-order-7 {\n    order: 7;\n  }\n\n  .p-sm-order-8 {\n    order: 8;\n  }\n\n  .p-sm-order-9 {\n    order: 9;\n  }\n\n  .p-sm-order-10 {\n    order: 10;\n  }\n\n  .p-sm-order-11 {\n    order: 11;\n  }\n\n  .p-sm-order-12 {\n    order: 12;\n  }\n}\n@media screen and (min-width: 768px) {\n  .p-md-order-first {\n    order: -1;\n  }\n\n  .p-md-order-last {\n    order: 13;\n  }\n\n  .p-md-order-0 {\n    order: 0;\n  }\n\n  .p-md-order-1 {\n    order: 1;\n  }\n\n  .p-md-order-2 {\n    order: 2;\n  }\n\n  .p-md-order-3 {\n    order: 3;\n  }\n\n  .p-md-order-4 {\n    order: 4;\n  }\n\n  .p-md-order-5 {\n    order: 5;\n  }\n\n  .p-md-order-6 {\n    order: 6;\n  }\n\n  .p-md-order-7 {\n    order: 7;\n  }\n\n  .p-md-order-8 {\n    order: 8;\n  }\n\n  .p-md-order-9 {\n    order: 9;\n  }\n\n  .p-md-order-10 {\n    order: 10;\n  }\n\n  .p-md-order-11 {\n    order: 11;\n  }\n\n  .p-md-order-12 {\n    order: 12;\n  }\n}\n@media screen and (min-width: 992px) {\n  .p-lg-order-first {\n    order: -1;\n  }\n\n  .p-lg-order-last {\n    order: 13;\n  }\n\n  .p-lg-order-0 {\n    order: 0;\n  }\n\n  .p-lg-order-1 {\n    order: 1;\n  }\n\n  .p-lg-order-2 {\n    order: 2;\n  }\n\n  .p-lg-order-3 {\n    order: 3;\n  }\n\n  .p-lg-order-4 {\n    order: 4;\n  }\n\n  .p-lg-order-5 {\n    order: 5;\n  }\n\n  .p-lg-order-6 {\n    order: 6;\n  }\n\n  .p-lg-order-7 {\n    order: 7;\n  }\n\n  .p-lg-order-8 {\n    order: 8;\n  }\n\n  .p-lg-order-9 {\n    order: 9;\n  }\n\n  .p-lg-order-10 {\n    order: 10;\n  }\n\n  .p-lg-order-11 {\n    order: 11;\n  }\n\n  .p-lg-order-12 {\n    order: 12;\n  }\n}\n@media screen and (min-width: 1200px) {\n  .p-xl-order-first {\n    order: -1;\n  }\n\n  .p-xl-order-last {\n    order: 13;\n  }\n\n  .p-xl-order-0 {\n    order: 0;\n  }\n\n  .p-xl-order-1 {\n    order: 1;\n  }\n\n  .p-xl-order-2 {\n    order: 2;\n  }\n\n  .p-xl-order-3 {\n    order: 3;\n  }\n\n  .p-xl-order-4 {\n    order: 4;\n  }\n\n  .p-xl-order-5 {\n    order: 5;\n  }\n\n  .p-xl-order-6 {\n    order: 6;\n  }\n\n  .p-xl-order-7 {\n    order: 7;\n  }\n\n  .p-xl-order-8 {\n    order: 8;\n  }\n\n  .p-xl-order-9 {\n    order: 9;\n  }\n\n  .p-xl-order-10 {\n    order: 10;\n  }\n\n  .p-xl-order-11 {\n    order: 11;\n  }\n\n  .p-xl-order-12 {\n    order: 12;\n  }\n}\n.p-field {\n  margin-bottom: 1rem;\n}\n\n.p-field > label {\n  display: inline-block;\n  margin-bottom: 0.5rem;\n}\n\n.p-field.p-grid > label {\n  display: flex;\n  align-items: center;\n}\n\n.p-field > small {\n  margin-top: 0.25rem;\n}\n\n.p-field.p-grid,\n.p-formgrid.p-grid {\n  margin-top: 0;\n}\n\n.p-field.p-grid .p-col-fixed,\n.p-formgrid.p-grid .p-col-fixed,\n.p-field.p-grid .p-col,\n.p-formgrid.p-grid .p-col,\n.p-field.p-grid .p-col-1,\n.p-formgrid.p-grid .p-col-1,\n.p-field.p-grid .p-col-2,\n.p-formgrid.p-grid .p-col-2,\n.p-field.p-grid .p-col-3,\n.p-formgrid.p-grid .p-col-3,\n.p-field.p-grid .p-col-4,\n.p-formgrid.p-grid .p-col-4,\n.p-field.p-grid .p-col-5,\n.p-formgrid.p-grid .p-col-5,\n.p-field.p-grid .p-col-6,\n.p-formgrid.p-grid .p-col-6,\n.p-field.p-grid .p-col-7,\n.p-formgrid.p-grid .p-col-7,\n.p-field.p-grid .p-col-8,\n.p-formgrid.p-grid .p-col-8,\n.p-field.p-grid .p-col-9,\n.p-formgrid.p-grid .p-col-9,\n.p-field.p-grid .p-col-10,\n.p-formgrid.p-grid .p-col-10,\n.p-field.p-grid .p-col-11,\n.p-formgrid.p-grid .p-col-11,\n.p-field.p-grid .p-col-12,\n.p-formgrid.p-grid .p-col-12 {\n  padding-top: 0;\n  padding-bottom: 0;\n}\n\n.p-formgroup-inline {\n  display: flex;\n  flex-wrap: wrap;\n  align-items: flex-start;\n}\n\n.p-formgroup-inline .p-field,\n.p-formgroup-inline .p-field-checkbox,\n.p-formgroup-inline .p-field-radiobutton {\n  margin-right: 1rem;\n}\n\n.p-formgroup-inline .p-field > label,\n.p-formgroup-inline .p-field-checkbox > label,\n.p-formgroup-inline .p-field-radiobutton > label {\n  margin-right: 0.5rem;\n  margin-bottom: 0;\n}\n\n.p-field-checkbox,\n.p-field-radiobutton {\n  margin-bottom: 1rem;\n  display: flex;\n  align-items: center;\n}\n\n.p-field-checkbox > label,\n.p-field-radiobutton > label {\n  margin-left: 0.5rem;\n  line-height: 1;\n}\n\n.p-d-none {\n  display: none !important;\n}\n\n.p-d-inline {\n  display: inline !important;\n}\n\n.p-d-inline-block {\n  display: inline-block !important;\n}\n\n.p-d-block {\n  display: block !important;\n}\n\n.p-d-flex {\n  display: flex !important;\n}\n\n.p-d-inline-flex {\n  display: inline-flex !important;\n}\n\n@media screen and (min-width: 576px) {\n  .p-d-sm-none {\n    display: none !important;\n  }\n\n  .p-d-sm-inline {\n    display: inline !important;\n  }\n\n  .p-d-sm-inline-block {\n    display: inline-block !important;\n  }\n\n  .p-d-sm-block {\n    display: block !important;\n  }\n\n  .p-d-sm-flex {\n    display: flex !important;\n  }\n\n  .p-d-sm-inline-flex {\n    display: inline-flex !important;\n  }\n}\n@media screen and (min-width: 768px) {\n  .p-d-md-none {\n    display: none !important;\n  }\n\n  .p-d-md-inline {\n    display: inline !important;\n  }\n\n  .p-d-md-inline-block {\n    display: inline-block !important;\n  }\n\n  .p-d-md-block {\n    display: block !important;\n  }\n\n  .p-d-md-flex {\n    display: flex !important;\n  }\n\n  .p-d-md-inline-flex {\n    display: inline-flex !important;\n  }\n}\n@media screen and (min-width: 992px) {\n  .p-d-lg-none {\n    display: none !important;\n  }\n\n  .p-d-lg-inline {\n    display: inline !important;\n  }\n\n  .p-d-lg-inline-block {\n    display: inline-block !important;\n  }\n\n  .p-d-lg-block {\n    display: block !important;\n  }\n\n  .p-d-lg-flex {\n    display: flex !important;\n  }\n\n  .p-d-lg-inline-flex {\n    display: inline-flex !important;\n  }\n}\n@media screen and (min-width: 1200px) {\n  .p-d-xl-none {\n    display: none !important;\n  }\n\n  .p-d-xl-inline {\n    display: inline !important;\n  }\n\n  .p-d-xl-inline-block {\n    display: inline-block !important;\n  }\n\n  .p-d-xl-block {\n    display: block !important;\n  }\n\n  .p-d-xl-flex {\n    display: flex !important;\n  }\n\n  .p-d-xl-inline-flex {\n    display: inline-flex !important;\n  }\n}\n@media print {\n  .p-d-print-none {\n    display: none !important;\n  }\n\n  .p-d-print-inline {\n    display: inline !important;\n  }\n\n  .p-d-print-inline-block {\n    display: inline-block !important;\n  }\n\n  .p-d-print-block {\n    display: block !important;\n  }\n\n  .p-d-print-flex {\n    display: flex !important;\n  }\n\n  .p-d-print-inline-flex {\n    display: inline-flex !important;\n  }\n}\n.p-text-justify {\n  text-align: justify !important;\n}\n\n.p-text-left {\n  text-align: left !important;\n}\n\n.p-text-right {\n  text-align: right !important;\n}\n\n.p-text-center {\n  text-align: center !important;\n}\n\n.p-text-nowrap {\n  white-space: nowrap !important;\n}\n\n.p-text-truncate {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n}\n\n.p-text-lowercase {\n  text-transform: lowercase !important;\n}\n\n.p-text-uppercase {\n  text-transform: uppercase !important;\n}\n\n.p-text-capitalize {\n  text-transform: capitalize !important;\n}\n\n.p-text-bold {\n  font-weight: 700 !important;\n}\n\n.p-text-normal {\n  font-weight: 400 !important;\n}\n\n.p-text-light {\n  font-weight: 300 !important;\n}\n\n.p-text-italic {\n  font-style: italic !important;\n}\n\n@media screen and (min-width: 576px) {\n  .p-text-sm-justify {\n    text-align: justify !important;\n  }\n\n  .p-text-sm-left {\n    text-align: left !important;\n  }\n\n  .p-text-sm-right {\n    text-align: right !important;\n  }\n\n  .p-text-sm-center {\n    text-align: center !important;\n  }\n}\n@media screen and (min-width: 768px) {\n  .p-text-md-justify {\n    text-align: justify !important;\n  }\n\n  .p-text-md-left {\n    text-align: left !important;\n  }\n\n  .p-text-md-right {\n    text-align: right !important;\n  }\n\n  .p-text-md-center {\n    text-align: center !important;\n  }\n}\n@media screen and (min-width: 992px) {\n  .p-text-lg-justify {\n    text-align: justify !important;\n  }\n\n  .p-text-lg-left {\n    text-align: left !important;\n  }\n\n  .p-text-lg-right {\n    text-align: right !important;\n  }\n\n  .p-text-lg-center {\n    text-align: center !important;\n  }\n}\n@media screen and (min-width: 1200px) {\n  .p-text-xl-justify {\n    text-align: justify !important;\n  }\n\n  .p-text-xl-left {\n    text-align: left !important;\n  }\n\n  .p-text-xl-right {\n    text-align: right !important;\n  }\n\n  .p-text-xl-center {\n    text-align: center !important;\n  }\n}\n.p-flex-row {\n  flex-direction: row !important;\n}\n\n.p-flex-row-reverse {\n  flex-direction: row-reverse !important;\n}\n\n.p-flex-column {\n  flex-direction: column !important;\n}\n\n.p-flex-column-reverse {\n  flex-direction: column-reverse !important;\n}\n\n@media screen and (min-width: 576px) {\n  .p-flex-sm-row {\n    flex-direction: row !important;\n  }\n\n  .p-flex-sm-row-reverse {\n    flex-direction: row-reverse !important;\n  }\n\n  .p-flex-sm-column {\n    flex-direction: column !important;\n  }\n\n  .p-flex-sm-column-reverse {\n    flex-direction: column-reverse !important;\n  }\n}\n@media screen and (min-width: 768px) {\n  .p-flex-md-row {\n    flex-direction: row !important;\n  }\n\n  .p-flex-md-row-reverse {\n    flex-direction: row-reverse !important;\n  }\n\n  .p-flex-md-column {\n    flex-direction: column !important;\n  }\n\n  .p-flex-md-column-reverse {\n    flex-direction: column-reverse !important;\n  }\n}\n@media screen and (min-width: 992px) {\n  .p-flex-lg-row {\n    flex-direction: row !important;\n  }\n\n  .p-flex-lg-row-reverse {\n    flex-direction: row-reverse !important;\n  }\n\n  .p-flex-lg-column {\n    flex-direction: column !important;\n  }\n\n  .p-flex-lg-column-reverse {\n    flex-direction: column-reverse !important;\n  }\n}\n@media screen and (min-width: 1200px) {\n  .p-flex-xl-row {\n    flex-direction: row !important;\n  }\n\n  .p-flex-xl-row-reverse {\n    flex-direction: row-reverse !important;\n  }\n\n  .p-flex-xl-column {\n    flex-direction: column !important;\n  }\n\n  .p-flex-xl-column-reverse {\n    flex-direction: column-reverse !important;\n  }\n}\n.p-jc-start {\n  justify-content: flex-start;\n}\n\n.p-jc-end {\n  justify-content: flex-end;\n}\n\n.p-jc-center {\n  justify-content: center;\n}\n\n.p-jc-between {\n  justify-content: space-between;\n}\n\n.p-jc-around {\n  justify-content: space-around;\n}\n\n.p-jc-evenly {\n  justify-content: space-evenly;\n}\n\n@media screen and (min-width: 576px) {\n  .p-jc-sm-start {\n    justify-content: flex-start;\n  }\n\n  .p-jc-sm-end {\n    justify-content: flex-end;\n  }\n\n  .p-jc-sm-center {\n    justify-content: center;\n  }\n\n  .p-jc-sm-between {\n    justify-content: space-between;\n  }\n\n  .p-jc-sm-around {\n    justify-content: space-around;\n  }\n\n  .p-jc-sm-evenly {\n    justify-content: space-evenly;\n  }\n}\n@media screen and (min-width: 768px) {\n  .p-jc-md-start {\n    justify-content: flex-start;\n  }\n\n  .p-jc-md-end {\n    justify-content: flex-end;\n  }\n\n  .p-jc-md-center {\n    justify-content: center;\n  }\n\n  .p-jc-md-between {\n    justify-content: space-between;\n  }\n\n  .p-jc-md-around {\n    justify-content: space-around;\n  }\n\n  .p-jc-md-evenly {\n    justify-content: space-evenly;\n  }\n}\n@media screen and (min-width: 992px) {\n  .p-jc-lg-start {\n    justify-content: flex-start;\n  }\n\n  .p-jc-lg-end {\n    justify-content: flex-end;\n  }\n\n  .p-jc-lg-center {\n    justify-content: center;\n  }\n\n  .p-jc-lg-between {\n    justify-content: space-between;\n  }\n\n  .p-jc-lg-around {\n    justify-content: space-around;\n  }\n\n  .p-jc-lg-evenly {\n    justify-content: space-evenly;\n  }\n}\n@media screen and (min-width: 1200px) {\n  .p-jc-xl-start {\n    justify-content: flex-start;\n  }\n\n  .p-jc-xl-end {\n    justify-content: flex-end;\n  }\n\n  .p-jc-xl-center {\n    justify-content: center;\n  }\n\n  .p-jc-xl-between {\n    justify-content: space-between;\n  }\n\n  .p-jc-xl-around {\n    justify-content: space-around;\n  }\n\n  .p-jc-xl-evenly {\n    justify-content: space-evenly;\n  }\n}\n.p-ai-start {\n  align-items: flex-start;\n}\n\n.p-ai-end {\n  align-items: flex-end;\n}\n\n.p-ai-center {\n  align-items: center;\n}\n\n.p-ai-baseline {\n  align-items: baseline;\n}\n\n.p-ai-stretch {\n  align-items: stretch;\n}\n\n@media screen and (min-width: 576px) {\n  .p-ai-sm-start {\n    align-items: flex-start;\n  }\n\n  .p-ai-sm-end {\n    align-items: flex-end;\n  }\n\n  .p-ai-sm-center {\n    align-items: center;\n  }\n\n  .p-ai-sm-baseline {\n    align-items: baseline;\n  }\n\n  .p-ai-sm-stretch {\n    align-items: stretch;\n  }\n}\n@media screen and (min-width: 768px) {\n  .p-ai-md-start {\n    align-items: flex-start;\n  }\n\n  .p-ai-md-end {\n    align-items: flex-end;\n  }\n\n  .p-ai-md-center {\n    align-items: center;\n  }\n\n  .p-ai-md-baseline {\n    align-items: baseline;\n  }\n\n  .p-ai-md-stretch {\n    align-items: stretch;\n  }\n}\n@media screen and (min-width: 992px) {\n  .p-ai-lg-start {\n    align-items: flex-start;\n  }\n\n  .p-ai-lg-end {\n    align-items: flex-end;\n  }\n\n  .p-ai-lg-center {\n    align-items: center;\n  }\n\n  .p-ai-lg-baseline {\n    align-items: baseline;\n  }\n\n  .p-ai-lg-stretch {\n    align-items: stretch;\n  }\n}\n@media screen and (min-width: 1200px) {\n  .p-ai-xl-start {\n    align-items: flex-start;\n  }\n\n  .p-ai-xl-end {\n    align-items: flex-end;\n  }\n\n  .p-ai-xl-center {\n    align-items: center;\n  }\n\n  .p-ai-xl-baseline {\n    align-items: baseline;\n  }\n\n  .p-ai-xl-stretch {\n    align-items: stretch;\n  }\n}\n.p-as-start {\n  align-self: start;\n}\n\n.p-as-end {\n  align-self: flex-end;\n}\n\n.p-as-center {\n  align-self: center;\n}\n\n.p-as-baseline {\n  align-self: baseline;\n}\n\n.p-as-stretch {\n  align-self: stretch;\n}\n\n@media screen and (min-width: 576px) {\n  .p-as-sm-start {\n    align-self: start;\n  }\n\n  .p-as-sm-end {\n    align-self: flex-end;\n  }\n\n  .p-as-sm-center {\n    align-self: center;\n  }\n\n  .p-as-sm-baseline {\n    align-self: baseline;\n  }\n\n  .p-as-sm-stretch {\n    align-self: stretch;\n  }\n}\n@media screen and (min-width: 768px) {\n  .p-as-md-start {\n    align-self: start;\n  }\n\n  .p-as-md-end {\n    align-self: flex-end;\n  }\n\n  .p-as-md-center {\n    align-self: center;\n  }\n\n  .p-as-md-baseline {\n    align-self: baseline;\n  }\n\n  .p-as-md-stretch {\n    align-self: stretch;\n  }\n}\n@media screen and (min-width: 992px) {\n  .p-as-lg-start {\n    align-self: start;\n  }\n\n  .p-as-lg-end {\n    align-self: flex-end;\n  }\n\n  .p-as-lg-center {\n    align-self: center;\n  }\n\n  .p-as-lg-baseline {\n    align-self: baseline;\n  }\n\n  .p-as-lg-stretch {\n    align-self: stretch;\n  }\n}\n@media screen and (min-width: 1200px) {\n  .p-as-xl-start {\n    align-self: start;\n  }\n\n  .p-as-xl-end {\n    align-self: flex-end;\n  }\n\n  .p-as-xl-center {\n    align-self: center;\n  }\n\n  .p-as-xl-baseline {\n    align-self: baseline;\n  }\n\n  .p-as-xl-stretch {\n    align-self: stretch;\n  }\n}\n.p-ac-start {\n  align-content: flex-start;\n}\n\n.p-ac-end {\n  align-content: flex-end;\n}\n\n.p-ac-center {\n  align-content: center;\n}\n\n.p-ac-around {\n  align-content: space-around;\n}\n\n.p-ac-stretch {\n  align-content: stretch;\n}\n\n.p-ac-between {\n  align-content: space-between;\n}\n\n@media screen and (min-width: 576px) {\n  .p-ac-sm-start {\n    align-content: flex-start;\n  }\n\n  .p-ac-sm-end {\n    align-content: flex-end;\n  }\n\n  .p-ac-sm-center {\n    align-content: center;\n  }\n\n  .p-ac-sm-around {\n    align-content: space-around;\n  }\n\n  .p-ac-sm-stretch {\n    align-content: stretch;\n  }\n\n  .p-ac-sm-between {\n    align-content: space-between;\n  }\n}\n@media screen and (min-width: 768px) {\n  .p-ac-md-start {\n    align-content: flex-start;\n  }\n\n  .p-ac-md-end {\n    align-content: flex-end;\n  }\n\n  .p-ac-md-center {\n    align-content: center;\n  }\n\n  .p-ac-md-around {\n    align-content: space-around;\n  }\n\n  .p-ac-md-stretch {\n    align-content: stretch;\n  }\n\n  .p-ac-md-between {\n    align-content: space-between;\n  }\n}\n@media screen and (min-width: 992px) {\n  .p-ac-lg-start {\n    align-content: flex-start;\n  }\n\n  .p-ac-lg-end {\n    align-content: flex-end;\n  }\n\n  .p-ac-lg-center {\n    align-content: center;\n  }\n\n  .p-ac-lg-around {\n    align-content: space-around;\n  }\n\n  .p-ac-lg-stretch {\n    align-content: stretch;\n  }\n\n  .p-ac-lg-between {\n    align-content: space-between;\n  }\n}\n@media screen and (min-width: 1200px) {\n  .p-ac-xl-start {\n    align-content: flex-start;\n  }\n\n  .p-ac-xl-end {\n    align-content: flex-end;\n  }\n\n  .p-ac-xl-center {\n    align-content: center;\n  }\n\n  .p-ac-xl-around {\n    align-content: space-around;\n  }\n\n  .p-ac-xl-stretch {\n    align-content: stretch;\n  }\n\n  .p-ac-xl-between {\n    align-content: space-between;\n  }\n}\n.p-order-0 {\n  order: 0;\n}\n\n.p-order-1 {\n  order: 1;\n}\n\n.p-order-2 {\n  order: 2;\n}\n\n.p-order-3 {\n  order: 3;\n}\n\n.p-order-4 {\n  order: 4;\n}\n\n.p-order-5 {\n  order: 5;\n}\n\n.p-order-6 {\n  order: 6;\n}\n\n@media screen and (min-width: 576px) {\n  .p-order-sm-0 {\n    order: 0;\n  }\n\n  .p-order-sm-1 {\n    order: 1;\n  }\n\n  .p-order-sm-2 {\n    order: 2;\n  }\n\n  .p-order-sm-3 {\n    order: 3;\n  }\n\n  .p-order-sm-4 {\n    order: 4;\n  }\n\n  .p-order-sm-5 {\n    order: 5;\n  }\n\n  .p-order-sm-6 {\n    order: 6;\n  }\n}\n@media screen and (min-width: 768px) {\n  .p-order-md-0 {\n    order: 0;\n  }\n\n  .p-order-md-1 {\n    order: 1;\n  }\n\n  .p-order-md-2 {\n    order: 2;\n  }\n\n  .p-order-md-3 {\n    order: 3;\n  }\n\n  .p-order-md-4 {\n    order: 4;\n  }\n\n  .p-order-md-5 {\n    order: 5;\n  }\n\n  .p-order-md-6 {\n    order: 6;\n  }\n}\n@media screen and (min-width: 992px) {\n  .p-order-lg-0 {\n    order: 0;\n  }\n\n  .p-order-lg-1 {\n    order: 1;\n  }\n\n  .p-order-lg-2 {\n    order: 2;\n  }\n\n  .p-order-lg-3 {\n    order: 3;\n  }\n\n  .p-order-lg-4 {\n    order: 4;\n  }\n\n  .p-order-lg-5 {\n    order: 5;\n  }\n\n  .p-order-lg-6 {\n    order: 6;\n  }\n}\n@media screen and (min-width: 1200px) {\n  .p-order-xl-0 {\n    order: 0;\n  }\n\n  .p-order-xl-1 {\n    order: 1;\n  }\n\n  .p-order-xl-2 {\n    order: 2;\n  }\n\n  .p-order-xl-3 {\n    order: 3;\n  }\n\n  .p-order-xl-4 {\n    order: 4;\n  }\n\n  .p-order-xl-5 {\n    order: 5;\n  }\n\n  .p-order-xl-6 {\n    order: 6;\n  }\n}\n.p-flex-nowrap {\n  flex-wrap: nowrap;\n}\n\n.p-flex-wrap {\n  flex-wrap: wrap;\n}\n\n.p-flex-wrap-reverse {\n  flex-wrap: wrap-reverse;\n}\n\n@media screen and (min-width: 576px) {\n  .p-flex-sm-nowrap {\n    flex-wrap: nowrap;\n  }\n\n  .p-flex-sm-wrap {\n    flex-wrap: wrap;\n  }\n\n  .p-flex-sm-wrap-reverse {\n    flex-wrap: wrap-reverse;\n  }\n}\n@media screen and (min-width: 768px) {\n  .p-flex-md-nowrap {\n    flex-wrap: nowrap;\n  }\n\n  .p-flex-md-wrap {\n    flex-wrap: wrap;\n  }\n\n  .p-flex-md-wrap-reverse {\n    flex-wrap: wrap-reverse;\n  }\n}\n@media screen and (min-width: 992px) {\n  .p-flex-lg-nowrap {\n    flex-wrap: nowrap;\n  }\n\n  .p-flex-lg-wrap {\n    flex-wrap: wrap;\n  }\n\n  .p-flex-lg-wrap-reverse {\n    flex-wrap: wrap-reverse;\n  }\n}\n@media screen and (min-width: 1200px) {\n  .p-flex-xl-nowrap {\n    flex-wrap: nowrap;\n  }\n\n  .p-flex-xl-wrap {\n    flex-wrap: wrap;\n  }\n\n  .p-flex-xl-wrap-reverse {\n    flex-wrap: wrap-reverse;\n  }\n}\n.p-pt-0 {\n  padding-top: 0 !important;\n}\n\n.p-pt-1 {\n  padding-top: 0.25rem !important;\n}\n\n.p-pt-2 {\n  padding-top: 0.5rem !important;\n}\n\n.p-pt-3 {\n  padding-top: 1rem !important;\n}\n\n.p-pt-4 {\n  padding-top: 1.5rem !important;\n}\n\n.p-pt-5 {\n  padding-top: 2rem !important;\n}\n\n.p-pt-6 {\n  padding-top: 3rem !important;\n}\n\n.p-pr-0 {\n  padding-right: 0 !important;\n}\n\n.p-pr-1 {\n  padding-right: 0.25rem !important;\n}\n\n.p-pr-2 {\n  padding-right: 0.5rem !important;\n}\n\n.p-pr-3 {\n  padding-right: 1rem !important;\n}\n\n.p-pr-4 {\n  padding-right: 1.5rem !important;\n}\n\n.p-pr-5 {\n  padding-right: 2rem !important;\n}\n\n.p-pr-6 {\n  padding-right: 3rem !important;\n}\n\n.p-pl-0 {\n  padding-left: 0 !important;\n}\n\n.p-pl-1 {\n  padding-left: 0.25rem !important;\n}\n\n.p-pl-2 {\n  padding-left: 0.5rem !important;\n}\n\n.p-pl-3 {\n  padding-left: 1rem !important;\n}\n\n.p-pl-4 {\n  padding-left: 1.5rem !important;\n}\n\n.p-pl-5 {\n  padding-left: 2rem !important;\n}\n\n.p-pl-6 {\n  padding-left: 3rem !important;\n}\n\n.p-pb-0 {\n  padding-bottom: 0 !important;\n}\n\n.p-pb-1 {\n  padding-bottom: 0.25rem !important;\n}\n\n.p-pb-2 {\n  padding-bottom: 0.5rem !important;\n}\n\n.p-pb-3 {\n  padding-bottom: 1rem !important;\n}\n\n.p-pb-4 {\n  padding-bottom: 1.5rem !important;\n}\n\n.p-pb-5 {\n  padding-bottom: 2rem !important;\n}\n\n.p-pb-6 {\n  padding-bottom: 3rem !important;\n}\n\n.p-px-0 {\n  padding-left: 0 !important;\n  padding-right: 0 !important;\n}\n\n.p-px-1 {\n  padding-left: 0.25rem !important;\n  padding-right: 0.25rem !important;\n}\n\n.p-px-2 {\n  padding-left: 0.5rem !important;\n  padding-right: 0.5rem !important;\n}\n\n.p-px-3 {\n  padding-left: 1rem !important;\n  padding-right: 1rem !important;\n}\n\n.p-px-4 {\n  padding-left: 1.5rem !important;\n  padding-right: 1.5rem !important;\n}\n\n.p-px-5 {\n  padding-left: 2rem !important;\n  padding-right: 2rem !important;\n}\n\n.p-px-6 {\n  padding-left: 3rem !important;\n  padding-right: 3rem !important;\n}\n\n.p-py-0 {\n  padding-top: 0 !important;\n  padding-bottom: 0 !important;\n}\n\n.p-py-1 {\n  padding-top: 0.25rem !important;\n  padding-bottom: 0.25rem !important;\n}\n\n.p-py-2 {\n  padding-top: 0.5rem !important;\n  padding-bottom: 0.5rem !important;\n}\n\n.p-py-3 {\n  padding-top: 1rem !important;\n  padding-bottom: 1rem !important;\n}\n\n.p-py-4 {\n  padding-top: 1.5rem !important;\n  padding-bottom: 1.5rem !important;\n}\n\n.p-py-5 {\n  padding-top: 2rem !important;\n  padding-bottom: 2rem !important;\n}\n\n.p-py-6 {\n  padding-top: 3rem !important;\n  padding-bottom: 3rem !important;\n}\n\n.p-p-0 {\n  padding: 0 !important;\n}\n\n.p-p-1 {\n  padding: 0.25rem !important;\n}\n\n.p-p-2 {\n  padding: 0.5rem !important;\n}\n\n.p-p-3 {\n  padding: 1rem !important;\n}\n\n.p-p-4 {\n  padding: 1.5rem !important;\n}\n\n.p-p-5 {\n  padding: 2rem !important;\n}\n\n.p-p-6 {\n  padding: 3rem !important;\n}\n\n@media screen and (min-width: 576px) {\n  .p-pt-sm-0 {\n    padding-top: 0 !important;\n  }\n\n  .p-pt-sm-1 {\n    padding-top: 0.25rem !important;\n  }\n\n  .p-pt-sm-2 {\n    padding-top: 0.5rem !important;\n  }\n\n  .p-pt-sm-3 {\n    padding-top: 1rem !important;\n  }\n\n  .p-pt-sm-4 {\n    padding-top: 1.5rem !important;\n  }\n\n  .p-pt-sm-5 {\n    padding-top: 2rem !important;\n  }\n\n  .p-pt-sm-6 {\n    padding-top: 3rem !important;\n  }\n\n  .p-pr-sm-0 {\n    padding-right: 0 !important;\n  }\n\n  .p-pr-sm-1 {\n    padding-right: 0.25rem !important;\n  }\n\n  .p-pr-sm-2 {\n    padding-right: 0.5rem !important;\n  }\n\n  .p-pr-sm-3 {\n    padding-right: 1rem !important;\n  }\n\n  .p-pr-sm-4 {\n    padding-right: 1.5rem !important;\n  }\n\n  .p-pr-sm-5 {\n    padding-right: 2rem !important;\n  }\n\n  .p-pr-sm-6 {\n    padding-right: 3rem !important;\n  }\n\n  .p-pl-sm-0 {\n    padding-left: 0 !important;\n  }\n\n  .p-pl-sm-1 {\n    padding-left: 0.25rem !important;\n  }\n\n  .p-pl-sm-2 {\n    padding-left: 0.5rem !important;\n  }\n\n  .p-pl-sm-3 {\n    padding-left: 1rem !important;\n  }\n\n  .p-pl-sm-4 {\n    padding-left: 1.5rem !important;\n  }\n\n  .p-pl-sm-5 {\n    padding-left: 2rem !important;\n  }\n\n  .p-pl-sm-6 {\n    padding-left: 3rem !important;\n  }\n\n  .p-pb-sm-0 {\n    padding-bottom: 0 !important;\n  }\n\n  .p-pb-sm-1 {\n    padding-bottom: 0.25rem !important;\n  }\n\n  .p-pb-sm-2 {\n    padding-bottom: 0.5rem !important;\n  }\n\n  .p-pb-sm-3 {\n    padding-bottom: 1rem !important;\n  }\n\n  .p-pb-sm-4 {\n    padding-bottom: 1.5rem !important;\n  }\n\n  .p-pb-sm-5 {\n    padding-bottom: 2rem !important;\n  }\n\n  .p-pb-sm-6 {\n    padding-bottom: 3rem !important;\n  }\n\n  .p-px-sm-0 {\n    padding-left: 0 !important;\n    padding-right: 0 !important;\n  }\n\n  .p-px-sm-1 {\n    padding-left: 0.25rem !important;\n    padding-right: 0.25rem !important;\n  }\n\n  .p-px-sm-2 {\n    padding-left: 0.5rem !important;\n    padding-right: 0.5rem !important;\n  }\n\n  .p-px-sm-3 {\n    padding-left: 1rem !important;\n    padding-right: 1rem !important;\n  }\n\n  .p-px-sm-4 {\n    padding-left: 1.5rem !important;\n    padding-right: 1.5rem !important;\n  }\n\n  .p-px-sm-5 {\n    padding-left: 2rem !important;\n    padding-right: 2rem !important;\n  }\n\n  .p-px-sm-6 {\n    padding-left: 3rem !important;\n    padding-right: 3rem !important;\n  }\n\n  .p-py-sm-0 {\n    padding-top: 0 !important;\n    padding-bottom: 0 !important;\n  }\n\n  .p-py-sm-1 {\n    padding-top: 0.25rem !important;\n    padding-bottom: 0.25rem !important;\n  }\n\n  .p-py-sm-2 {\n    padding-top: 0.5rem !important;\n    padding-bottom: 0.5rem !important;\n  }\n\n  .p-py-sm-3 {\n    padding-top: 1rem !important;\n    padding-bottom: 1rem !important;\n  }\n\n  .p-py-sm-4 {\n    padding-top: 1.5rem !important;\n    padding-bottom: 1.5rem !important;\n  }\n\n  .p-py-sm-5 {\n    padding-top: 2rem !important;\n    padding-bottom: 2rem !important;\n  }\n\n  .p-py-sm-6 {\n    padding-top: 3rem !important;\n    padding-bottom: 3rem !important;\n  }\n\n  .p-p-sm-0 {\n    padding: 0 !important;\n  }\n\n  .p-p-sm-1 {\n    padding: 0.25rem !important;\n  }\n\n  .p-p-sm-2 {\n    padding: 0.5rem !important;\n  }\n\n  .p-p-sm-3 {\n    padding: 1rem !important;\n  }\n\n  .p-p-sm-4 {\n    padding: 1.5rem !important;\n  }\n\n  .p-p-sm-5 {\n    padding: 2rem !important;\n  }\n\n  .p-p-sm-6 {\n    padding: 3rem !important;\n  }\n}\n@media screen and (min-width: 768px) {\n  .p-pt-md-0 {\n    padding-top: 0 !important;\n  }\n\n  .p-pt-md-1 {\n    padding-top: 0.25rem !important;\n  }\n\n  .p-pt-md-2 {\n    padding-top: 0.5rem !important;\n  }\n\n  .p-pt-md-3 {\n    padding-top: 1rem !important;\n  }\n\n  .p-pt-md-4 {\n    padding-top: 1.5rem !important;\n  }\n\n  .p-pt-md-5 {\n    padding-top: 2rem !important;\n  }\n\n  .p-pt-md-6 {\n    padding-top: 3rem !important;\n  }\n\n  .p-pr-md-0 {\n    padding-right: 0 !important;\n  }\n\n  .p-pr-md-1 {\n    padding-right: 0.25rem !important;\n  }\n\n  .p-pr-md-2 {\n    padding-right: 0.5rem !important;\n  }\n\n  .p-pr-md-3 {\n    padding-right: 1rem !important;\n  }\n\n  .p-pr-md-4 {\n    padding-right: 1.5rem !important;\n  }\n\n  .p-pr-md-5 {\n    padding-right: 2rem !important;\n  }\n\n  .p-pr-md-6 {\n    padding-right: 3rem !important;\n  }\n\n  .p-pl-md-0 {\n    padding-left: 0 !important;\n  }\n\n  .p-pl-md-1 {\n    padding-left: 0.25rem !important;\n  }\n\n  .p-pl-md-2 {\n    padding-left: 0.5rem !important;\n  }\n\n  .p-pl-md-3 {\n    padding-left: 1rem !important;\n  }\n\n  .p-pl-md-4 {\n    padding-left: 1.5rem !important;\n  }\n\n  .p-pl-md-5 {\n    padding-left: 2rem !important;\n  }\n\n  .p-pl-md-6 {\n    padding-left: 3rem !important;\n  }\n\n  .p-pb-md-0 {\n    padding-bottom: 0 !important;\n  }\n\n  .p-pb-md-1 {\n    padding-bottom: 0.25rem !important;\n  }\n\n  .p-pb-md-2 {\n    padding-bottom: 0.5rem !important;\n  }\n\n  .p-pb-md-3 {\n    padding-bottom: 1rem !important;\n  }\n\n  .p-pb-md-4 {\n    padding-bottom: 1.5rem !important;\n  }\n\n  .p-pb-md-5 {\n    padding-bottom: 2rem !important;\n  }\n\n  .p-pb-md-6 {\n    padding-bottom: 3rem !important;\n  }\n\n  .p-px-md-0 {\n    padding-left: 0 !important;\n    padding-right: 0 !important;\n  }\n\n  .p-px-md-1 {\n    padding-left: 0.25rem !important;\n    padding-right: 0.25rem !important;\n  }\n\n  .p-px-md-2 {\n    padding-left: 0.5rem !important;\n    padding-right: 0.5rem !important;\n  }\n\n  .p-px-md-3 {\n    padding-left: 1rem !important;\n    padding-right: 1rem !important;\n  }\n\n  .p-px-md-4 {\n    padding-left: 1.5rem !important;\n    padding-right: 1.5rem !important;\n  }\n\n  .p-px-md-5 {\n    padding-left: 2rem !important;\n    padding-right: 2rem !important;\n  }\n\n  .p-px-md-6 {\n    padding-left: 3rem !important;\n    padding-right: 3rem !important;\n  }\n\n  .p-py-md-0 {\n    padding-top: 0 !important;\n    padding-bottom: 0 !important;\n  }\n\n  .p-py-md-1 {\n    padding-top: 0.25rem !important;\n    padding-bottom: 0.25rem !important;\n  }\n\n  .p-py-md-2 {\n    padding-top: 0.5rem !important;\n    padding-bottom: 0.5rem !important;\n  }\n\n  .p-py-md-3 {\n    padding-top: 1rem !important;\n    padding-bottom: 1rem !important;\n  }\n\n  .p-py-md-4 {\n    padding-top: 1.5rem !important;\n    padding-bottom: 1.5rem !important;\n  }\n\n  .p-py-md-5 {\n    padding-top: 2rem !important;\n    padding-bottom: 2rem !important;\n  }\n\n  .p-py-md-6 {\n    padding-top: 3rem !important;\n    padding-bottom: 3rem !important;\n  }\n\n  .p-p-md-0 {\n    padding: 0 !important;\n  }\n\n  .p-p-md-1 {\n    padding: 0.25rem !important;\n  }\n\n  .p-p-md-2 {\n    padding: 0.5rem !important;\n  }\n\n  .p-p-md-3 {\n    padding: 1rem !important;\n  }\n\n  .p-p-md-4 {\n    padding: 1.5rem !important;\n  }\n\n  .p-p-md-5 {\n    padding: 2rem !important;\n  }\n\n  .p-p-md-6 {\n    padding: 3rem !important;\n  }\n}\n@media screen and (min-width: 992px) {\n  .p-pt-lg-0 {\n    padding-top: 0 !important;\n  }\n\n  .p-pt-lg-1 {\n    padding-top: 0.25rem !important;\n  }\n\n  .p-pt-lg-2 {\n    padding-top: 0.5rem !important;\n  }\n\n  .p-pt-lg-3 {\n    padding-top: 1rem !important;\n  }\n\n  .p-pt-lg-4 {\n    padding-top: 1.5rem !important;\n  }\n\n  .p-pt-lg-5 {\n    padding-top: 2rem !important;\n  }\n\n  .p-pt-lg-6 {\n    padding-top: 3rem !important;\n  }\n\n  .p-pt-lg-auto {\n    padding-top: 3rem !important;\n  }\n\n  .p-pr-lg-0 {\n    padding-right: 0 !important;\n  }\n\n  .p-pr-lg-1 {\n    padding-right: 0.25rem !important;\n  }\n\n  .p-pr-lg-2 {\n    padding-right: 0.5rem !important;\n  }\n\n  .p-pr-lg-3 {\n    padding-right: 1rem !important;\n  }\n\n  .p-pr-lg-4 {\n    padding-right: 1.5rem !important;\n  }\n\n  .p-pr-lg-5 {\n    padding-right: 2rem !important;\n  }\n\n  .p-pr-lg-6 {\n    padding-right: 3rem !important;\n  }\n\n  .p-pl-lg-0 {\n    padding-left: 0 !important;\n  }\n\n  .p-pl-lg-1 {\n    padding-left: 0.25rem !important;\n  }\n\n  .p-pl-lg-2 {\n    padding-left: 0.5rem !important;\n  }\n\n  .p-pl-lg-3 {\n    padding-left: 1rem !important;\n  }\n\n  .p-pl-lg-4 {\n    padding-left: 1.5rem !important;\n  }\n\n  .p-pl-lg-5 {\n    padding-left: 2rem !important;\n  }\n\n  .p-pl-lg-6 {\n    padding-left: 3rem !important;\n  }\n\n  .p-pb-lg-0 {\n    padding-bottom: 0 !important;\n  }\n\n  .p-pb-lg-1 {\n    padding-bottom: 0.25rem !important;\n  }\n\n  .p-pb-lg-2 {\n    padding-bottom: 0.5rem !important;\n  }\n\n  .p-pb-lg-3 {\n    padding-bottom: 1rem !important;\n  }\n\n  .p-pb-lg-4 {\n    padding-bottom: 1.5rem !important;\n  }\n\n  .p-pb-lg-5 {\n    padding-bottom: 2rem !important;\n  }\n\n  .p-pb-lg-6 {\n    padding-bottom: 3rem !important;\n  }\n\n  .p-px-lg-0 {\n    padding-left: 0 !important;\n    padding-right: 0 !important;\n  }\n\n  .p-px-lg-1 {\n    padding-left: 0.25rem !important;\n    padding-right: 0.25rem !important;\n  }\n\n  .p-px-lg-2 {\n    padding-left: 0.5rem !important;\n    padding-right: 0.5rem !important;\n  }\n\n  .p-px-lg-3 {\n    padding-left: 1rem !important;\n    padding-right: 1rem !important;\n  }\n\n  .p-px-lg-4 {\n    padding-left: 1.5rem !important;\n    padding-right: 1.5rem !important;\n  }\n\n  .p-px-lg-5 {\n    padding-left: 2rem !important;\n    padding-right: 2rem !important;\n  }\n\n  .p-px-lg-6 {\n    padding-left: 3rem !important;\n    padding-right: 3rem !important;\n  }\n\n  .p-py-lg-0 {\n    padding-top: 0 !important;\n    padding-bottom: 0 !important;\n  }\n\n  .p-py-lg-1 {\n    padding-top: 0.25rem !important;\n    padding-bottom: 0.25rem !important;\n  }\n\n  .p-py-lg-2 {\n    padding-top: 0.5rem !important;\n    padding-bottom: 0.5rem !important;\n  }\n\n  .p-py-lg-3 {\n    padding-top: 1rem !important;\n    padding-bottom: 1rem !important;\n  }\n\n  .p-py-lg-4 {\n    padding-top: 1.5rem !important;\n    padding-bottom: 1.5rem !important;\n  }\n\n  .p-py-lg-5 {\n    padding-top: 2rem !important;\n    padding-bottom: 2rem !important;\n  }\n\n  .p-py-lg-6 {\n    padding-top: 3rem !important;\n    padding-bottom: 3rem !important;\n  }\n\n  .p-p-lg-0 {\n    padding: 0 !important;\n  }\n\n  .p-p-lg-1 {\n    padding: 0.25rem !important;\n  }\n\n  .p-p-lg-2 {\n    padding: 0.5rem !important;\n  }\n\n  .p-p-lg-3 {\n    padding: 1rem !important;\n  }\n\n  .p-p-lg-4 {\n    padding: 1.5rem !important;\n  }\n\n  .p-p-lg-5 {\n    padding: 2rem !important;\n  }\n\n  .p-p-lg-6 {\n    padding: 3rem !important;\n  }\n}\n@media screen and (min-width: 1200px) {\n  .p-pt-xl-0 {\n    padding-top: 0 !important;\n  }\n\n  .p-pt-xl-1 {\n    padding-top: 0.25rem !important;\n  }\n\n  .p-pt-xl-2 {\n    padding-top: 0.5rem !important;\n  }\n\n  .p-pt-xl-3 {\n    padding-top: 1rem !important;\n  }\n\n  .p-pt-xl-4 {\n    padding-top: 1.5rem !important;\n  }\n\n  .p-pt-xl-5 {\n    padding-top: 2rem !important;\n  }\n\n  .p-pt-xl-6 {\n    padding-top: 3rem !important;\n  }\n\n  .p-pr-xl-0 {\n    padding-right: 0 !important;\n  }\n\n  .p-pr-xl-1 {\n    padding-right: 0.25rem !important;\n  }\n\n  .p-pr-xl-2 {\n    padding-right: 0.5rem !important;\n  }\n\n  .p-pr-xl-3 {\n    padding-right: 1rem !important;\n  }\n\n  .p-pr-xl-4 {\n    padding-right: 1.5rem !important;\n  }\n\n  .p-pr-xl-5 {\n    padding-right: 2rem !important;\n  }\n\n  .p-pr-xl-6 {\n    padding-right: 3rem !important;\n  }\n\n  .p-pl-xl-0 {\n    padding-left: 0 !important;\n  }\n\n  .p-pl-xl-1 {\n    padding-left: 0.25rem !important;\n  }\n\n  .p-pl-xl-2 {\n    padding-left: 0.5rem !important;\n  }\n\n  .p-pl-xl-3 {\n    padding-left: 1rem !important;\n  }\n\n  .p-pl-xl-4 {\n    padding-left: 1.5rem !important;\n  }\n\n  .p-pl-xl-5 {\n    padding-left: 2rem !important;\n  }\n\n  .p-pl-xl-6 {\n    padding-left: 3rem !important;\n  }\n\n  .p-pb-xl-0 {\n    padding-bottom: 0 !important;\n  }\n\n  .p-pb-xl-1 {\n    padding-bottom: 0.25rem !important;\n  }\n\n  .p-pb-xl-2 {\n    padding-bottom: 0.5rem !important;\n  }\n\n  .p-pb-xl-3 {\n    padding-bottom: 1rem !important;\n  }\n\n  .p-pb-xl-4 {\n    padding-bottom: 1.5rem !important;\n  }\n\n  .p-pb-xl-5 {\n    padding-bottom: 2rem !important;\n  }\n\n  .p-pb-xl-6 {\n    padding-bottom: 3rem !important;\n  }\n\n  .p-px-xl-0 {\n    padding-left: 0 !important;\n    padding-right: 0 !important;\n  }\n\n  .p-px-xl-1 {\n    padding-left: 0.25rem !important;\n    padding-right: 0.25rem !important;\n  }\n\n  .p-px-xl-2 {\n    padding-left: 0.5rem !important;\n    padding-right: 0.5rem !important;\n  }\n\n  .p-px-xl-3 {\n    padding-left: 1rem !important;\n    padding-right: 1rem !important;\n  }\n\n  .p-px-xl-4 {\n    padding-left: 1.5rem !important;\n    padding-right: 1.5rem !important;\n  }\n\n  .p-px-xl-5 {\n    padding-left: 2rem !important;\n    padding-right: 2rem !important;\n  }\n\n  .p-px-xl-6 {\n    padding-left: 3rem !important;\n    padding-right: 3rem !important;\n  }\n\n  .p-py-xl-0 {\n    padding-top: 0 !important;\n    padding-bottom: 0 !important;\n  }\n\n  .p-py-xl-1 {\n    padding-top: 0.25rem !important;\n    padding-bottom: 0.25rem !important;\n  }\n\n  .p-py-xl-2 {\n    padding-top: 0.5rem !important;\n    padding-bottom: 0.5rem !important;\n  }\n\n  .p-py-xl-3 {\n    padding-top: 1rem !important;\n    padding-bottom: 1rem !important;\n  }\n\n  .p-py-xl-4 {\n    padding-top: 1.5rem !important;\n    padding-bottom: 1.5rem !important;\n  }\n\n  .p-py-xl-5 {\n    padding-top: 2rem !important;\n    padding-bottom: 2rem !important;\n  }\n\n  .p-py-xl-6 {\n    padding-top: 3rem !important;\n    padding-bottom: 3rem !important;\n  }\n\n  .p-p-xl-0 {\n    padding: 0 !important;\n  }\n\n  .p-p-xl-1 {\n    padding: 0.25rem !important;\n  }\n\n  .p-p-xl-2 {\n    padding: 0.5rem !important;\n  }\n\n  .p-p-xl-3 {\n    padding: 1rem !important;\n  }\n\n  .p-p-xl-4 {\n    padding: 1.5rem !important;\n  }\n\n  .p-p-xl-5 {\n    padding: 2rem !important;\n  }\n\n  .p-p-xl-6 {\n    padding: 3rem !important;\n  }\n}\n.p-mt-0 {\n  margin-top: 0 !important;\n}\n\n.p-mt-1 {\n  margin-top: 0.25rem !important;\n}\n\n.p-mt-2 {\n  margin-top: 0.5rem !important;\n}\n\n.p-mt-3 {\n  margin-top: 1rem !important;\n}\n\n.p-mt-4 {\n  margin-top: 1.5rem !important;\n}\n\n.p-mt-5 {\n  margin-top: 2rem !important;\n}\n\n.p-mt-6 {\n  margin-top: 3rem !important;\n}\n\n.p-mt-auto {\n  margin-top: auto !important;\n}\n\n.p-mr-0 {\n  margin-right: 0 !important;\n}\n\n.p-mr-1 {\n  margin-right: 0.25rem !important;\n}\n\n.p-mr-2 {\n  margin-right: 0.5rem !important;\n}\n\n.p-mr-3 {\n  margin-right: 1rem !important;\n}\n\n.p-mr-4 {\n  margin-right: 1.5rem !important;\n}\n\n.p-mr-5 {\n  margin-right: 2rem !important;\n}\n\n.p-mr-6 {\n  margin-right: 3rem !important;\n}\n\n.p-mr-auto {\n  margin-right: auto !important;\n}\n\n.p-ml-0 {\n  margin-left: 0 !important;\n}\n\n.p-ml-1 {\n  margin-left: 0.25rem !important;\n}\n\n.p-ml-2 {\n  margin-left: 0.5rem !important;\n}\n\n.p-ml-3 {\n  margin-left: 1rem !important;\n}\n\n.p-ml-4 {\n  margin-left: 1.5rem !important;\n}\n\n.p-ml-5 {\n  margin-left: 2rem !important;\n}\n\n.p-ml-6 {\n  margin-left: 3rem !important;\n}\n\n.p-ml-auto {\n  margin-left: auto !important;\n}\n\n.p-mb-0 {\n  margin-bottom: 0 !important;\n}\n\n.p-mb-1 {\n  margin-bottom: 0.25rem !important;\n}\n\n.p-mb-2 {\n  margin-bottom: 0.5rem !important;\n}\n\n.p-mb-3 {\n  margin-bottom: 1rem !important;\n}\n\n.p-mb-4 {\n  margin-bottom: 1.5rem !important;\n}\n\n.p-mb-5 {\n  margin-bottom: 2rem !important;\n}\n\n.p-mb-6 {\n  margin-bottom: 3rem !important;\n}\n\n.p-mb-auto {\n  margin-bottom: auto !important;\n}\n\n.p-mx-0 {\n  margin-left: 0 !important;\n  margin-right: 0 !important;\n}\n\n.p-mx-1 {\n  margin-left: 0.25rem !important;\n  margin-right: 0.25rem !important;\n}\n\n.p-mx-2 {\n  margin-left: 0.5rem !important;\n  margin-right: 0.5rem !important;\n}\n\n.p-mx-3 {\n  margin-left: 1rem !important;\n  margin-right: 1rem !important;\n}\n\n.p-mx-4 {\n  margin-left: 1.5rem !important;\n  margin-right: 1.5rem !important;\n}\n\n.p-mx-5 {\n  margin-left: 2rem !important;\n  margin-right: 2rem !important;\n}\n\n.p-mx-6 {\n  margin-left: 3rem !important;\n  margin-right: 3rem !important;\n}\n\n.p-mx-auto {\n  margin-left: auto !important;\n  margin-right: auto !important;\n}\n\n.p-my-0 {\n  margin-top: 0 !important;\n  margin-bottom: 0 !important;\n}\n\n.p-my-1 {\n  margin-top: 0.25rem !important;\n  margin-bottom: 0.25rem !important;\n}\n\n.p-my-2 {\n  margin-top: 0.5rem !important;\n  margin-bottom: 0.5rem !important;\n}\n\n.p-my-3 {\n  margin-top: 1rem !important;\n  margin-bottom: 1rem !important;\n}\n\n.p-my-4 {\n  margin-top: 1.5rem !important;\n  margin-bottom: 1.5rem !important;\n}\n\n.p-my-5 {\n  margin-top: 2rem !important;\n  margin-bottom: 2rem !important;\n}\n\n.p-my-6 {\n  margin-top: 3rem !important;\n  margin-bottom: 3rem !important;\n}\n\n.p-my-auto {\n  margin-top: auto !important;\n  margin-bottom: auto !important;\n}\n\n.p-m-0 {\n  margin: 0 !important;\n}\n\n.p-m-1 {\n  margin: 0.25rem !important;\n}\n\n.p-m-2 {\n  margin: 0.5rem !important;\n}\n\n.p-m-3 {\n  margin: 1rem !important;\n}\n\n.p-m-4 {\n  margin: 1.5rem !important;\n}\n\n.p-m-5 {\n  margin: 2rem !important;\n}\n\n.p-m-6 {\n  margin: 3rem !important;\n}\n\n.p-m-auto {\n  margin: auto !important;\n}\n\n@media screen and (min-width: 576px) {\n  .p-mt-sm-0 {\n    margin-top: 0 !important;\n  }\n\n  .p-mt-sm-1 {\n    margin-top: 0.25rem !important;\n  }\n\n  .p-mt-sm-2 {\n    margin-top: 0.5rem !important;\n  }\n\n  .p-mt-sm-3 {\n    margin-top: 1rem !important;\n  }\n\n  .p-mt-sm-4 {\n    margin-top: 1.5rem !important;\n  }\n\n  .p-mt-sm-5 {\n    margin-top: 2rem !important;\n  }\n\n  .p-mt-sm-6 {\n    margin-top: 3rem !important;\n  }\n\n  .p-mt-sm-auto {\n    margin-top: 3rem !important;\n  }\n\n  .p-mr-sm-0 {\n    margin-right: 0 !important;\n  }\n\n  .p-mr-sm-1 {\n    margin-right: 0.25rem !important;\n  }\n\n  .p-mr-sm-2 {\n    margin-right: 0.5rem !important;\n  }\n\n  .p-mr-sm-3 {\n    margin-right: 1rem !important;\n  }\n\n  .p-mr-sm-4 {\n    margin-right: 1.5rem !important;\n  }\n\n  .p-mr-sm-5 {\n    margin-right: 2rem !important;\n  }\n\n  .p-mr-sm-6 {\n    margin-right: 3rem !important;\n  }\n\n  .p-mr-sm-auto {\n    margin-right: auto !important;\n  }\n\n  .p-ml-sm-0 {\n    margin-left: 0 !important;\n  }\n\n  .p-ml-sm-1 {\n    margin-left: 0.25rem !important;\n  }\n\n  .p-ml-sm-2 {\n    margin-left: 0.5rem !important;\n  }\n\n  .p-ml-sm-3 {\n    margin-left: 1rem !important;\n  }\n\n  .p-ml-sm-4 {\n    margin-left: 1.5rem !important;\n  }\n\n  .p-ml-sm-5 {\n    margin-left: 2rem !important;\n  }\n\n  .p-ml-sm-6 {\n    margin-left: 3rem !important;\n  }\n\n  .p-ml-sm-auto {\n    margin-left: auto !important;\n  }\n\n  .p-mb-sm-0 {\n    margin-bottom: 0 !important;\n  }\n\n  .p-mb-sm-1 {\n    margin-bottom: 0.25rem !important;\n  }\n\n  .p-mb-sm-2 {\n    margin-bottom: 0.5rem !important;\n  }\n\n  .p-mb-sm-3 {\n    margin-bottom: 1rem !important;\n  }\n\n  .p-mb-sm-4 {\n    margin-bottom: 1.5rem !important;\n  }\n\n  .p-mb-sm-5 {\n    margin-bottom: 2rem !important;\n  }\n\n  .p-mb-sm-6 {\n    margin-bottom: 3rem !important;\n  }\n\n  .p-mb-sm-auto {\n    margin-bottom: auto !important;\n  }\n\n  .p-mx-sm-0 {\n    margin-left: 0 !important;\n    margin-right: 0 !important;\n  }\n\n  .p-mx-sm-1 {\n    margin-left: 0.25rem !important;\n    margin-right: 0.25rem !important;\n  }\n\n  .p-mx-sm-2 {\n    margin-left: 0.5rem !important;\n    margin-right: 0.5rem !important;\n  }\n\n  .p-mx-sm-3 {\n    margin-left: 1rem !important;\n    margin-right: 1rem !important;\n  }\n\n  .p-mx-sm-4 {\n    margin-left: 1.5rem !important;\n    margin-right: 1.5rem !important;\n  }\n\n  .p-mx-sm-5 {\n    margin-left: 2rem !important;\n    margin-right: 2rem !important;\n  }\n\n  .p-mx-sm-6 {\n    margin-left: 3rem !important;\n    margin-right: 3rem !important;\n  }\n\n  .p-mx-sm-auto {\n    margin-left: auto !important;\n    margin-right: auto !important;\n  }\n\n  .p-my-sm-0 {\n    margin-top: 0 !important;\n    margin-bottom: 0 !important;\n  }\n\n  .p-my-sm-1 {\n    margin-top: 0.25rem !important;\n    margin-bottom: 0.25rem !important;\n  }\n\n  .p-my-sm-2 {\n    margin-top: 0.5rem !important;\n    margin-bottom: 0.5rem !important;\n  }\n\n  .p-my-sm-3 {\n    margin-top: 1rem !important;\n    margin-bottom: 1rem !important;\n  }\n\n  .p-my-sm-4 {\n    margin-top: 1.5rem !important;\n    margin-bottom: 1.5rem !important;\n  }\n\n  .p-my-sm-5 {\n    margin-top: 2rem !important;\n    margin-bottom: 2rem !important;\n  }\n\n  .p-my-sm-6 {\n    margin-top: 3rem !important;\n    margin-bottom: 3rem !important;\n  }\n\n  .p-my-sm-auto {\n    margin-top: auto !important;\n    margin-bottom: auto !important;\n  }\n\n  .p-m-sm-0 {\n    margin: 0 !important;\n  }\n\n  .p-m-sm-1 {\n    margin: 0.25rem !important;\n  }\n\n  .p-m-sm-2 {\n    margin: 0.5rem !important;\n  }\n\n  .p-m-sm-3 {\n    margin: 1rem !important;\n  }\n\n  .p-m-sm-4 {\n    margin: 1.5rem !important;\n  }\n\n  .p-m-sm-5 {\n    margin: 2rem !important;\n  }\n\n  .p-m-sm-6 {\n    margin: 3rem !important;\n  }\n\n  .p-m-sm-auto {\n    margin: auto !important;\n  }\n}\n@media screen and (min-width: 768px) {\n  .p-mt-md-0 {\n    margin-top: 0 !important;\n  }\n\n  .p-mt-md-1 {\n    margin-top: 0.25rem !important;\n  }\n\n  .p-mt-md-2 {\n    margin-top: 0.5rem !important;\n  }\n\n  .p-mt-md-3 {\n    margin-top: 1rem !important;\n  }\n\n  .p-mt-md-4 {\n    margin-top: 1.5rem !important;\n  }\n\n  .p-mt-md-5 {\n    margin-top: 2rem !important;\n  }\n\n  .p-mt-md-6 {\n    margin-top: 3rem !important;\n  }\n\n  .p-mt-md-auto {\n    margin-top: 3rem !important;\n  }\n\n  .p-mr-md-0 {\n    margin-right: 0 !important;\n  }\n\n  .p-mr-md-1 {\n    margin-right: 0.25rem !important;\n  }\n\n  .p-mr-md-2 {\n    margin-right: 0.5rem !important;\n  }\n\n  .p-mr-md-3 {\n    margin-right: 1rem !important;\n  }\n\n  .p-mr-md-4 {\n    margin-right: 1.5rem !important;\n  }\n\n  .p-mr-md-5 {\n    margin-right: 2rem !important;\n  }\n\n  .p-mr-md-6 {\n    margin-right: 3rem !important;\n  }\n\n  .p-mr-md-auto {\n    margin-right: auto !important;\n  }\n\n  .p-ml-md-0 {\n    margin-left: 0 !important;\n  }\n\n  .p-ml-md-1 {\n    margin-left: 0.25rem !important;\n  }\n\n  .p-ml-md-2 {\n    margin-left: 0.5rem !important;\n  }\n\n  .p-ml-md-3 {\n    margin-left: 1rem !important;\n  }\n\n  .p-ml-md-4 {\n    margin-left: 1.5rem !important;\n  }\n\n  .p-ml-md-5 {\n    margin-left: 2rem !important;\n  }\n\n  .p-ml-md-6 {\n    margin-left: 3rem !important;\n  }\n\n  .p-ml-md-auto {\n    margin-left: auto !important;\n  }\n\n  .p-mb-md-0 {\n    margin-bottom: 0 !important;\n  }\n\n  .p-mb-md-1 {\n    margin-bottom: 0.25rem !important;\n  }\n\n  .p-mb-md-2 {\n    margin-bottom: 0.5rem !important;\n  }\n\n  .p-mb-md-3 {\n    margin-bottom: 1rem !important;\n  }\n\n  .p-mb-md-4 {\n    margin-bottom: 1.5rem !important;\n  }\n\n  .p-mb-md-5 {\n    margin-bottom: 2rem !important;\n  }\n\n  .p-mb-md-6 {\n    margin-bottom: 3rem !important;\n  }\n\n  .p-mb-md-auto {\n    margin-bottom: auto !important;\n  }\n\n  .p-mx-md-0 {\n    margin-left: 0 !important;\n    margin-right: 0 !important;\n  }\n\n  .p-mx-md-1 {\n    margin-left: 0.25rem !important;\n    margin-right: 0.25rem !important;\n  }\n\n  .p-mx-md-2 {\n    margin-left: 0.5rem !important;\n    margin-right: 0.5rem !important;\n  }\n\n  .p-mx-md-3 {\n    margin-left: 1rem !important;\n    margin-right: 1rem !important;\n  }\n\n  .p-mx-md-4 {\n    margin-left: 1.5rem !important;\n    margin-right: 1.5rem !important;\n  }\n\n  .p-mx-md-5 {\n    margin-left: 2rem !important;\n    margin-right: 2rem !important;\n  }\n\n  .p-mx-md-6 {\n    margin-left: 3rem !important;\n    margin-right: 3rem !important;\n  }\n\n  .p-mx-md-auto {\n    margin-left: auto !important;\n    margin-right: auto !important;\n  }\n\n  .p-my-md-0 {\n    margin-top: 0 !important;\n    margin-bottom: 0 !important;\n  }\n\n  .p-my-md-1 {\n    margin-top: 0.25rem !important;\n    margin-bottom: 0.25rem !important;\n  }\n\n  .p-my-md-2 {\n    margin-top: 0.5rem !important;\n    margin-bottom: 0.5rem !important;\n  }\n\n  .p-my-md-3 {\n    margin-top: 1rem !important;\n    margin-bottom: 1rem !important;\n  }\n\n  .p-my-md-4 {\n    margin-top: 1.5rem !important;\n    margin-bottom: 1.5rem !important;\n  }\n\n  .p-my-md-5 {\n    margin-top: 2rem !important;\n    margin-bottom: 2rem !important;\n  }\n\n  .p-my-md-6 {\n    margin-top: 3rem !important;\n    margin-bottom: 3rem !important;\n  }\n\n  .p-my-md-auto {\n    margin-top: auto !important;\n    margin-bottom: auto !important;\n  }\n\n  .p-m-md-0 {\n    margin: 0 !important;\n  }\n\n  .p-m-md-1 {\n    margin: 0.25rem !important;\n  }\n\n  .p-m-md-2 {\n    margin: 0.5rem !important;\n  }\n\n  .p-m-md-3 {\n    margin: 1rem !important;\n  }\n\n  .p-m-md-4 {\n    margin: 1.5rem !important;\n  }\n\n  .p-m-md-5 {\n    margin: 2rem !important;\n  }\n\n  .p-m-md-6 {\n    margin: 3rem !important;\n  }\n\n  .p-m-md-auto {\n    margin: auto !important;\n  }\n}\n@media screen and (min-width: 992px) {\n  .p-mt-lg-0 {\n    margin-top: 0 !important;\n  }\n\n  .p-mt-lg-1 {\n    margin-top: 0.25rem !important;\n  }\n\n  .p-mt-lg-2 {\n    margin-top: 0.5rem !important;\n  }\n\n  .p-mt-lg-3 {\n    margin-top: 1rem !important;\n  }\n\n  .p-mt-lg-4 {\n    margin-top: 1.5rem !important;\n  }\n\n  .p-mt-lg-5 {\n    margin-top: 2rem !important;\n  }\n\n  .p-mt-lg-6 {\n    margin-top: 3rem !important;\n  }\n\n  .p-mt-lg-auto {\n    margin-top: 3rem !important;\n  }\n\n  .p-mr-lg-0 {\n    margin-right: 0 !important;\n  }\n\n  .p-mr-lg-1 {\n    margin-right: 0.25rem !important;\n  }\n\n  .p-mr-lg-2 {\n    margin-right: 0.5rem !important;\n  }\n\n  .p-mr-lg-3 {\n    margin-right: 1rem !important;\n  }\n\n  .p-mr-lg-4 {\n    margin-right: 1.5rem !important;\n  }\n\n  .p-mr-lg-5 {\n    margin-right: 2rem !important;\n  }\n\n  .p-mr-lg-6 {\n    margin-right: 3rem !important;\n  }\n\n  .p-mr-lg-auto {\n    margin-right: auto !important;\n  }\n\n  .p-ml-lg-0 {\n    margin-left: 0 !important;\n  }\n\n  .p-ml-lg-1 {\n    margin-left: 0.25rem !important;\n  }\n\n  .p-ml-lg-2 {\n    margin-left: 0.5rem !important;\n  }\n\n  .p-ml-lg-3 {\n    margin-left: 1rem !important;\n  }\n\n  .p-ml-lg-4 {\n    margin-left: 1.5rem !important;\n  }\n\n  .p-ml-lg-5 {\n    margin-left: 2rem !important;\n  }\n\n  .p-ml-lg-6 {\n    margin-left: 3rem !important;\n  }\n\n  .p-ml-lg-auto {\n    margin-left: auto !important;\n  }\n\n  .p-mb-lg-0 {\n    margin-bottom: 0 !important;\n  }\n\n  .p-mb-lg-1 {\n    margin-bottom: 0.25rem !important;\n  }\n\n  .p-mb-lg-2 {\n    margin-bottom: 0.5rem !important;\n  }\n\n  .p-mb-lg-3 {\n    margin-bottom: 1rem !important;\n  }\n\n  .p-mb-lg-4 {\n    margin-bottom: 1.5rem !important;\n  }\n\n  .p-mb-lg-5 {\n    margin-bottom: 2rem !important;\n  }\n\n  .p-mb-lg-6 {\n    margin-bottom: 3rem !important;\n  }\n\n  .p-mb-lg-auto {\n    margin-bottom: auto !important;\n  }\n\n  .p-mx-lg-0 {\n    margin-left: 0 !important;\n    margin-right: 0 !important;\n  }\n\n  .p-mx-lg-1 {\n    margin-left: 0.25rem !important;\n    margin-right: 0.25rem !important;\n  }\n\n  .p-mx-lg-2 {\n    margin-left: 0.5rem !important;\n    margin-right: 0.5rem !important;\n  }\n\n  .p-mx-lg-3 {\n    margin-left: 1rem !important;\n    margin-right: 1rem !important;\n  }\n\n  .p-mx-lg-4 {\n    margin-left: 1.5rem !important;\n    margin-right: 1.5rem !important;\n  }\n\n  .p-mx-lg-5 {\n    margin-left: 2rem !important;\n    margin-right: 2rem !important;\n  }\n\n  .p-mx-lg-6 {\n    margin-left: 3rem !important;\n    margin-right: 3rem !important;\n  }\n\n  .p-mx-lg-auto {\n    margin-left: auto !important;\n    margin-right: auto !important;\n  }\n\n  .p-my-lg-0 {\n    margin-top: 0 !important;\n    margin-bottom: 0 !important;\n  }\n\n  .p-my-lg-1 {\n    margin-top: 0.25rem !important;\n    margin-bottom: 0.25rem !important;\n  }\n\n  .p-my-lg-2 {\n    margin-top: 0.5rem !important;\n    margin-bottom: 0.5rem !important;\n  }\n\n  .p-my-lg-3 {\n    margin-top: 1rem !important;\n    margin-bottom: 1rem !important;\n  }\n\n  .p-my-lg-4 {\n    margin-top: 1.5rem !important;\n    margin-bottom: 1.5rem !important;\n  }\n\n  .p-my-lg-5 {\n    margin-top: 2rem !important;\n    margin-bottom: 2rem !important;\n  }\n\n  .p-my-lg-6 {\n    margin-top: 3rem !important;\n    margin-bottom: 3rem !important;\n  }\n\n  .p-my-lg-auto {\n    margin-top: auto !important;\n    margin-bottom: auto !important;\n  }\n\n  .p-m-lg-0 {\n    margin: 0 !important;\n  }\n\n  .p-m-lg-1 {\n    margin: 0.25rem !important;\n  }\n\n  .p-m-lg-2 {\n    margin: 0.5rem !important;\n  }\n\n  .p-m-lg-3 {\n    margin: 1rem !important;\n  }\n\n  .p-m-lg-4 {\n    margin: 1.5rem !important;\n  }\n\n  .p-m-lg-5 {\n    margin: 2rem !important;\n  }\n\n  .p-m-lg-6 {\n    margin: 3rem !important;\n  }\n\n  .p-m-lg-auto {\n    margin: auto !important;\n  }\n}\n@media screen and (min-width: 1200px) {\n  .p-mt-xl-0 {\n    margin-top: 0 !important;\n  }\n\n  .p-mt-xl-1 {\n    margin-top: 0.25rem !important;\n  }\n\n  .p-mt-xl-2 {\n    margin-top: 0.5rem !important;\n  }\n\n  .p-mt-xl-3 {\n    margin-top: 1rem !important;\n  }\n\n  .p-mt-xl-4 {\n    margin-top: 1.5rem !important;\n  }\n\n  .p-mt-xl-5 {\n    margin-top: 2rem !important;\n  }\n\n  .p-mt-xl-6 {\n    margin-top: 3rem !important;\n  }\n\n  .p-mt-xl-auto {\n    margin-top: 3rem !important;\n  }\n\n  .p-mr-xl-0 {\n    margin-right: 0 !important;\n  }\n\n  .p-mr-xl-1 {\n    margin-right: 0.25rem !important;\n  }\n\n  .p-mr-xl-2 {\n    margin-right: 0.5rem !important;\n  }\n\n  .p-mr-xl-3 {\n    margin-right: 1rem !important;\n  }\n\n  .p-mr-xl-4 {\n    margin-right: 1.5rem !important;\n  }\n\n  .p-mr-xl-5 {\n    margin-right: 2rem !important;\n  }\n\n  .p-mr-xl-6 {\n    margin-right: 3rem !important;\n  }\n\n  .p-mr-xl-auto {\n    margin-right: auto !important;\n  }\n\n  .p-ml-xl-0 {\n    margin-left: 0 !important;\n  }\n\n  .p-ml-xl-1 {\n    margin-left: 0.25rem !important;\n  }\n\n  .p-ml-xl-2 {\n    margin-left: 0.5rem !important;\n  }\n\n  .p-ml-xl-3 {\n    margin-left: 1rem !important;\n  }\n\n  .p-ml-xl-4 {\n    margin-left: 1.5rem !important;\n  }\n\n  .p-ml-xl-5 {\n    margin-left: 2rem !important;\n  }\n\n  .p-ml-xl-6 {\n    margin-left: 3rem !important;\n  }\n\n  .p-ml-xl-auto {\n    margin-left: auto !important;\n  }\n\n  .p-mb-xl-0 {\n    margin-bottom: 0 !important;\n  }\n\n  .p-mb-xl-1 {\n    margin-bottom: 0.25rem !important;\n  }\n\n  .p-mb-xl-2 {\n    margin-bottom: 0.5rem !important;\n  }\n\n  .p-mb-xl-3 {\n    margin-bottom: 1rem !important;\n  }\n\n  .p-mb-xl-4 {\n    margin-bottom: 1.5rem !important;\n  }\n\n  .p-mb-xl-5 {\n    margin-bottom: 2rem !important;\n  }\n\n  .p-mb-xl-6 {\n    margin-bottom: 3rem !important;\n  }\n\n  .p-mb-xl-auto {\n    margin-bottom: auto !important;\n  }\n\n  .p-mx-xl-0 {\n    margin-left: 0 !important;\n    margin-right: 0 !important;\n  }\n\n  .p-mx-xl-1 {\n    margin-left: 0.25rem !important;\n    margin-right: 0.25rem !important;\n  }\n\n  .p-mx-xl-2 {\n    margin-left: 0.5rem !important;\n    margin-right: 0.5rem !important;\n  }\n\n  .p-mx-xl-3 {\n    margin-left: 1rem !important;\n    margin-right: 1rem !important;\n  }\n\n  .p-mx-xl-4 {\n    margin-left: 1.5rem !important;\n    margin-right: 1.5rem !important;\n  }\n\n  .p-mx-xl-5 {\n    margin-left: 2rem !important;\n    margin-right: 2rem !important;\n  }\n\n  .p-mx-xl-6 {\n    margin-left: 3rem !important;\n    margin-right: 3rem !important;\n  }\n\n  .p-mx-xl-auto {\n    margin-left: auto !important;\n    margin-right: auto !important;\n  }\n\n  .p-my-xl-0 {\n    margin-top: 0 !important;\n    margin-bottom: 0 !important;\n  }\n\n  .p-my-xl-1 {\n    margin-top: 0.25rem !important;\n    margin-bottom: 0.25rem !important;\n  }\n\n  .p-my-xl-2 {\n    margin-top: 0.5rem !important;\n    margin-bottom: 0.5rem !important;\n  }\n\n  .p-my-xl-3 {\n    margin-top: 1rem !important;\n    margin-bottom: 1rem !important;\n  }\n\n  .p-my-xl-4 {\n    margin-top: 1.5rem !important;\n    margin-bottom: 1.5rem !important;\n  }\n\n  .p-my-xl-5 {\n    margin-top: 2rem !important;\n    margin-bottom: 2rem !important;\n  }\n\n  .p-my-xl-6 {\n    margin-top: 3rem !important;\n    margin-bottom: 3rem !important;\n  }\n\n  .p-my-xl-auto {\n    margin-top: auto !important;\n    margin-bottom: auto !important;\n  }\n\n  .p-m-xl-0 {\n    margin: 0 !important;\n  }\n\n  .p-m-xl-1 {\n    margin: 0.25rem !important;\n  }\n\n  .p-m-xl-2 {\n    margin: 0.5rem !important;\n  }\n\n  .p-m-xl-3 {\n    margin: 1rem !important;\n  }\n\n  .p-m-xl-4 {\n    margin: 1.5rem !important;\n  }\n\n  .p-m-xl-5 {\n    margin: 2rem !important;\n  }\n\n  .p-m-xl-6 {\n    margin: 3rem !important;\n  }\n\n  .p-m-xl-auto {\n    margin: auto !important;\n  }\n}\n.p-shadow-1 {\n  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);\n}\n\n.p-shadow-2 {\n  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);\n}\n\n.p-shadow-3 {\n  box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);\n}\n\n.p-shadow-4 {\n  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);\n}\n\n.p-shadow-5 {\n  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 5px 8px 0 rgba(0, 0, 0, 0.14), 0 1px 14px 0 rgba(0, 0, 0, 0.12);\n}\n\n.p-shadow-6 {\n  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);\n}\n\n.p-shadow-7 {\n  box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.2), 0 7px 10px 1px rgba(0, 0, 0, 0.14), 0 2px 16px 1px rgba(0, 0, 0, 0.12);\n}\n\n.p-shadow-8 {\n  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);\n}\n\n.p-shadow-9 {\n  box-shadow: 0 5px 6px -3px rgba(0, 0, 0, 0.2), 0 9px 12px 1px rgba(0, 0, 0, 0.14), 0 3px 16px 2px rgba(0, 0, 0, 0.12);\n}\n\n.p-shadow-10 {\n  box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.2), 0 10px 14px 1px rgba(0, 0, 0, 0.14), 0 4px 18px 3px rgba(0, 0, 0, 0.12);\n}\n\n.p-shadow-11 {\n  box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2), 0 11px 15px 1px rgba(0, 0, 0, 0.14), 0 4px 20px 3px rgba(0, 0, 0, 0.12);\n}\n\n.p-shadow-12 {\n  box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12);\n}\n\n.p-shadow-13 {\n  box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 13px 19px 2px rgba(0, 0, 0, 0.14), 0 5px 24px 4px rgba(0, 0, 0, 0.12);\n}\n\n.p-shadow-14 {\n  box-shadow: 0 7px 9px -4px rgba(0, 0, 0, 0.2), 0 14px 21px 2px rgba(0, 0, 0, 0.14), 0 5px 26px 4px rgba(0, 0, 0, 0.12);\n}\n\n.p-shadow-15 {\n  box-shadow: 0 8px 9px -5px rgba(0, 0, 0, 0.2), 0 15px 22px 2px rgba(0, 0, 0, 0.14), 0 6px 28px 5px rgba(0, 0, 0, 0.12);\n}\n\n.p-shadow-16 {\n  box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2), 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12);\n}\n\n.p-shadow-17 {\n  box-shadow: 0 8px 11px -5px rgba(0, 0, 0, 0.2), 0 17px 26px 2px rgba(0, 0, 0, 0.14), 0 6px 32px 5px rgba(0, 0, 0, 0.12);\n}\n\n.p-shadow-18 {\n  box-shadow: 0 9px 11px -5px rgba(0, 0, 0, 0.2), 0 18px 28px 2px rgba(0, 0, 0, 0.14), 0 7px 34px 6px rgba(0, 0, 0, 0.12);\n}\n\n.p-shadow-19 {\n  box-shadow: 0 9px 12px -6px rgba(0, 0, 0, 0.2), 0 19px 29px 2px rgba(0, 0, 0, 0.14), 0 7px 36px 6px rgba(0, 0, 0, 0.12);\n}\n\n.p-shadow-20 {\n  box-shadow: 0 10px 13px -6px rgba(0, 0, 0, 0.2), 0 20px 31px 3px rgba(0, 0, 0, 0.14), 0 8px 38px 7px rgba(0, 0, 0, 0.12);\n}\n\n.p-shadow-21 {\n  box-shadow: 0 10px 13px -6px rgba(0, 0, 0, 0.2), 0 21px 33px 3px rgba(0, 0, 0, 0.14), 0 8px 40px 7px rgba(0, 0, 0, 0.12);\n}\n\n.p-shadow-22 {\n  box-shadow: 0 10px 14px -6px rgba(0, 0, 0, 0.2), 0 22px 35px 3px rgba(0, 0, 0, 0.14), 0 8px 42px 7px rgba(0, 0, 0, 0.12);\n}\n\n.p-shadow-23 {\n  box-shadow: 0 11px 14px -7px rgba(0, 0, 0, 0.2), 0 23px 36px 3px rgba(0, 0, 0, 0.14), 0 9px 44px 8px rgba(0, 0, 0, 0.12);\n}\n\n.p-shadow-24 {\n  box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2), 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12);\n}\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/accordion/Accordion.vue?vue&type=style&index=0&lang=css&":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/accordion/Accordion.vue?vue&type=style&index=0&lang=css& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\n.p-accordion-header-link {\n    cursor: pointer;\n    display: flex;\n    align-items: center;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n    position: relative;\n    text-decoration: none;\n}\n.p-accordion-header-link:focus {\n    z-index: 1;\n}\n.p-accordion-header-text {\n    line-height: 1;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -19707,6 +19921,30 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/primevue/accordion/index.js":
+/*!**************************************************!*\
+  !*** ./node_modules/primevue/accordion/index.js ***!
+  \**************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+module.exports = __webpack_require__(/*! ./Accordion.vue */ "./node_modules/primevue/accordion/Accordion.vue");
+
+/***/ }),
+
+/***/ "./node_modules/primevue/accordiontab/index.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/primevue/accordiontab/index.js ***!
+  \*****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+module.exports = __webpack_require__(/*! ./AccordionTab.vue */ "./node_modules/primevue/accordiontab/AccordionTab.vue");
+
+/***/ }),
+
 /***/ "./node_modules/primevue/checkbox/index.js":
 /*!*************************************************!*\
   !*** ./node_modules/primevue/checkbox/index.js ***!
@@ -21141,6 +21379,36 @@ var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMP
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/accordion/Accordion.vue?vue&type=style&index=0&lang=css&":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/accordion/Accordion.vue?vue&type=style&index=0&lang=css& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_vue_loader_lib_index_js_vue_loader_options_Accordion_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../vue-loader/lib/loaders/stylePostLoader.js!../../postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../vue-loader/lib/index.js??vue-loader-options!./Accordion.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/accordion/Accordion.vue?vue&type=style&index=0&lang=css&");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_vue_loader_lib_index_js_vue_loader_options_Accordion_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_vue_loader_lib_index_js_vue_loader_options_Accordion_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/dropdown/Dropdown.vue?vue&type=style&index=0&lang=css&":
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/dropdown/Dropdown.vue?vue&type=style&index=0&lang=css& ***!
@@ -21477,6 +21745,238 @@ module.exports = function (list, options) {
     lastIdentifiers = newLastIdentifiers;
   };
 };
+
+/***/ }),
+
+/***/ "./node_modules/primevue/accordion/Accordion.vue":
+/*!*******************************************************!*\
+  !*** ./node_modules/primevue/accordion/Accordion.vue ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Accordion_vue_vue_type_template_id_7cfc3ec0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Accordion.vue?vue&type=template&id=7cfc3ec0& */ "./node_modules/primevue/accordion/Accordion.vue?vue&type=template&id=7cfc3ec0&");
+/* harmony import */ var _Accordion_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Accordion.vue?vue&type=script&lang=js& */ "./node_modules/primevue/accordion/Accordion.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Accordion_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Accordion.vue?vue&type=style&index=0&lang=css& */ "./node_modules/primevue/accordion/Accordion.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+;
+
+
+/* normalize component */
+
+var component = (0,_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _Accordion_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Accordion_vue_vue_type_template_id_7cfc3ec0___WEBPACK_IMPORTED_MODULE_0__.render,
+  _Accordion_vue_vue_type_template_id_7cfc3ec0___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "node_modules/primevue/accordion/Accordion.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/accordion/Accordion.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/accordion/Accordion.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    props: {
+        multiple: Boolean,
+        activeIndex: [Number,Array]
+    },
+    data() {
+        return {
+            d_activeIndex: this.activeIndex
+        }
+    },
+    watch: {
+        activeIndex(newValue) {
+            this.d_activeIndex = newValue;
+        }
+    },
+    methods: {
+        onToggle(event, tab, index, isActive) {
+            const eventName = isActive ? 'tab-close' : 'tab-open';
+
+            if (this.multiple) {
+                let x = this.d_activeIndex;
+
+                if (x && x.some(i => i === index)) {
+                    this.d_activeIndex = x.filter(i => i !== index);
+                }
+
+                else x ? this.d_activeIndex.push(index) : this.d_activeIndex = [index]
+            }
+
+            else {
+                index === this.d_activeIndex ? this.d_activeIndex = null : this.d_activeIndex = index;
+            }
+
+            this.$emit('update:activeIndex', this.d_activeIndex);
+
+            this.$emit(eventName, {
+                originalEvent: event,
+                index: index
+            });
+        }
+    }
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/primevue/accordiontab/AccordionTab.vue":
+/*!*************************************************************!*\
+  !*** ./node_modules/primevue/accordiontab/AccordionTab.vue ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _AccordionTab_vue_vue_type_template_id_0a7dd7a4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AccordionTab.vue?vue&type=template&id=0a7dd7a4& */ "./node_modules/primevue/accordiontab/AccordionTab.vue?vue&type=template&id=0a7dd7a4&");
+/* harmony import */ var _AccordionTab_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AccordionTab.vue?vue&type=script&lang=js& */ "./node_modules/primevue/accordiontab/AccordionTab.vue?vue&type=script&lang=js&");
+/* harmony import */ var _vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _AccordionTab_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _AccordionTab_vue_vue_type_template_id_0a7dd7a4___WEBPACK_IMPORTED_MODULE_0__.render,
+  _AccordionTab_vue_vue_type_template_id_0a7dd7a4___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "node_modules/primevue/accordiontab/AccordionTab.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/accordiontab/AccordionTab.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/accordiontab/AccordionTab.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _utils_UniqueComponentId__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/UniqueComponentId */ "./node_modules/primevue/utils/UniqueComponentId.js");
+/* harmony import */ var _utils_DomHandler__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/DomHandler */ "./node_modules/primevue/utils/DomHandler.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    props: {
+        header: null,
+        disabled: Boolean
+    },
+    data() {
+        return {
+            index: null
+        }
+    },
+    created() {
+        this.$parent.$children.forEach((child, i) => {
+            if (child === this) this.index = i
+        })
+    },
+    methods: {
+        onTabClick(event) {
+            if (!this.disabled) {
+                this.$parent.onToggle(event, this, _utils_DomHandler__WEBPACK_IMPORTED_MODULE_1__["default"].index(this.$el), this.isTabActive());
+            }
+        },
+        onTabKeydown(event) {
+            if (event.which === 13) {
+                this.onTabClick(event);
+            }
+        },
+        isTabActive() {
+            let activeArray = this.$parent.d_activeIndex;
+            return this.$parent.multiple ? activeArray && activeArray.includes(this.index) : this.index === activeArray;
+        },
+        getTabClass() {
+            return ['p-accordion-tab', {'p-accordion-tab-active': this.isTabActive()}];
+        },
+        getTabHeaderClass() {
+            return ['p-accordion-header', {'p-highlight': this.isTabActive(), 'p-disabled': this.disabled}]
+        },
+        getHeaderIcon() {
+            const active = this.isTabActive();
+            return ['p-accordion-toggle-icon pi', {'pi-chevron-right': !active, 'pi-chevron-down': active}];
+        }
+    },
+    computed: {
+        ariaId() {
+            return (0,_utils_UniqueComponentId__WEBPACK_IMPORTED_MODULE_0__["default"])();
+        }
+    }
+});
+
 
 /***/ }),
 
@@ -22693,6 +23193,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/primevue/accordion/Accordion.vue?vue&type=style&index=0&lang=css&":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/primevue/accordion/Accordion.vue?vue&type=style&index=0&lang=css& ***!
+  \****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _style_loader_dist_cjs_js_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_vue_loader_lib_index_js_vue_loader_options_Accordion_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../style-loader/dist/cjs.js!../../css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../vue-loader/lib/loaders/stylePostLoader.js!../../postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../vue-loader/lib/index.js??vue-loader-options!./Accordion.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/accordion/Accordion.vue?vue&type=style&index=0&lang=css&");
+
+
+/***/ }),
+
 /***/ "./node_modules/primevue/dropdown/Dropdown.vue?vue&type=style&index=0&lang=css&":
 /*!**************************************************************************************!*\
   !*** ./node_modules/primevue/dropdown/Dropdown.vue?vue&type=style&index=0&lang=css& ***!
@@ -22715,6 +23228,72 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_loader_dist_cjs_js_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_vue_loader_lib_index_js_vue_loader_options_Toast_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../style-loader/dist/cjs.js!../../css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../vue-loader/lib/loaders/stylePostLoader.js!../../postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../vue-loader/lib/index.js??vue-loader-options!./Toast.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/toast/Toast.vue?vue&type=style&index=0&lang=css&");
+
+
+/***/ }),
+
+/***/ "./node_modules/primevue/accordion/Accordion.vue?vue&type=script&lang=js&":
+/*!********************************************************************************!*\
+  !*** ./node_modules/primevue/accordion/Accordion.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _vue_loader_lib_index_js_vue_loader_options_Accordion_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../vue-loader/lib/index.js??vue-loader-options!./Accordion.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/accordion/Accordion.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_vue_loader_lib_index_js_vue_loader_options_Accordion_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./node_modules/primevue/accordion/Accordion.vue?vue&type=template&id=7cfc3ec0&":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/primevue/accordion/Accordion.vue?vue&type=template&id=7cfc3ec0& ***!
+  \**************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_Accordion_vue_vue_type_template_id_7cfc3ec0___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_Accordion_vue_vue_type_template_id_7cfc3ec0___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_Accordion_vue_vue_type_template_id_7cfc3ec0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../vue-loader/lib/index.js??vue-loader-options!./Accordion.vue?vue&type=template&id=7cfc3ec0& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/accordion/Accordion.vue?vue&type=template&id=7cfc3ec0&");
+
+
+/***/ }),
+
+/***/ "./node_modules/primevue/accordiontab/AccordionTab.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/primevue/accordiontab/AccordionTab.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _vue_loader_lib_index_js_vue_loader_options_AccordionTab_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../vue-loader/lib/index.js??vue-loader-options!./AccordionTab.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/accordiontab/AccordionTab.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_vue_loader_lib_index_js_vue_loader_options_AccordionTab_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./node_modules/primevue/accordiontab/AccordionTab.vue?vue&type=template&id=0a7dd7a4&":
+/*!********************************************************************************************!*\
+  !*** ./node_modules/primevue/accordiontab/AccordionTab.vue?vue&type=template&id=0a7dd7a4& ***!
+  \********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_AccordionTab_vue_vue_type_template_id_0a7dd7a4___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_AccordionTab_vue_vue_type_template_id_0a7dd7a4___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_AccordionTab_vue_vue_type_template_id_0a7dd7a4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../vue-loader/lib/index.js??vue-loader-options!./AccordionTab.vue?vue&type=template&id=0a7dd7a4& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/accordiontab/AccordionTab.vue?vue&type=template&id=0a7dd7a4&");
 
 
 /***/ }),
@@ -22897,6 +23476,125 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ProductForm_vue_vue_type_template_id_0f96d7b8___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ProductForm_vue_vue_type_template_id_0f96d7b8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./ProductForm.vue?vue&type=template&id=0f96d7b8& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ProductForm.vue?vue&type=template&id=0f96d7b8&");
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/accordion/Accordion.vue?vue&type=template&id=7cfc3ec0&":
+/*!*****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/accordion/Accordion.vue?vue&type=template&id=7cfc3ec0& ***!
+  \*****************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "p-accordion p-component" },
+    [_vm._t("default")],
+    2
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/accordiontab/AccordionTab.vue?vue&type=template&id=0a7dd7a4&":
+/*!***********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/accordiontab/AccordionTab.vue?vue&type=template&id=0a7dd7a4& ***!
+  \***********************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { class: _vm.getTabClass() },
+    [
+      _c("div", { class: _vm.getTabHeaderClass() }, [
+        _c(
+          "a",
+          {
+            staticClass: "p-accordion-header-link",
+            attrs: {
+              role: "tab",
+              tabindex: _vm.disabled ? null : "0",
+              "aria-expanded": _vm.isTabActive(),
+              id: _vm.ariaId + "_header",
+              "aria-controls": _vm.ariaId + "_content"
+            },
+            on: { click: _vm.onTabClick, keydown: _vm.onTabKeydown }
+          },
+          [
+            _c("span", { class: _vm.getHeaderIcon() }),
+            _vm._v(" "),
+            _vm.header
+              ? _c("span", { staticClass: "p-accordion-header-text" }, [
+                  _vm._v(_vm._s(_vm.header))
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _vm._t("header")
+          ],
+          2
+        )
+      ]),
+      _vm._v(" "),
+      _c("transition", { attrs: { name: "p-toggleable-content" } }, [
+        _c(
+          "div",
+          {
+            directives: [
+              {
+                name: "show",
+                rawName: "v-show",
+                value: _vm.isTabActive(),
+                expression: "isTabActive()"
+              }
+            ],
+            staticClass: "p-toggleable-content",
+            attrs: {
+              role: "region",
+              id: _vm.ariaId + "_content",
+              "aria-labelledby": _vm.ariaId + "_header"
+            }
+          },
+          [
+            _c(
+              "div",
+              { staticClass: "p-accordion-content" },
+              [_vm._t("default")],
+              2
+            )
+          ]
+        )
+      ])
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
 
 
 /***/ }),
@@ -23501,17 +24199,17 @@ var render = function() {
             [
               _c("prime-dropdown", {
                 attrs: {
-                  options: _vm.material,
+                  options: _vm.state,
                   optionLabel: "name",
                   optionValue: "id",
-                  placeholder: "Material"
+                  placeholder: "State"
                 },
                 model: {
-                  value: _vm.data.material_id,
+                  value: _vm.data.state_id,
                   callback: function($$v) {
-                    _vm.$set(_vm.data, "material_id", $$v)
+                    _vm.$set(_vm.data, "state_id", $$v)
                   },
-                  expression: "data.material_id"
+                  expression: "data.state_id"
                 }
               })
             ],
@@ -23520,7 +24218,7 @@ var render = function() {
           _vm._v(" "),
           _c(
             "div",
-            { staticClass: "p-col" },
+            { staticClass: "p-field p-col-4" },
             [
               _c("prime-dropdown", {
                 attrs: {
@@ -23536,48 +24234,952 @@ var render = function() {
                   },
                   expression: "data.condition_id"
                 }
+              }),
+              _vm._v(" "),
+              _vm.hasError("condition_id")
+                ? _c("small", { staticClass: "p-invalid" }, [
+                    _vm._v(_vm._s(_vm.hasErrorText("condition_id")))
+                  ])
+                : _vm._e()
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "p-field p-col-4" },
+            [
+              _c("prime-dropdown", {
+                attrs: {
+                  options: _vm.deliveryset,
+                  optionLabel: "name",
+                  optionValue: "id",
+                  placeholder: "Scope of delivery"
+                },
+                model: {
+                  value: _vm.data.deliveryset_id,
+                  callback: function($$v) {
+                    _vm.$set(_vm.data, "deliveryset_id", $$v)
+                  },
+                  expression: "data.deliveryset_id"
+                }
               })
             ],
             1
           ),
           _vm._v(" "),
-          _c("div", { staticClass: "p-col" }),
+          _c(
+            "div",
+            { staticClass: "p-field p-col-4" },
+            [
+              _c("prime-dropdown", {
+                attrs: {
+                  options: _vm.deliverytime,
+                  optionLabel: "name",
+                  optionValue: "id",
+                  placeholder: "Availability"
+                },
+                model: {
+                  value: _vm.data.deliverytime_id,
+                  callback: function($$v) {
+                    _vm.$set(_vm.data, "deliverytime_id", $$v)
+                  },
+                  expression: "data.deliverytime_id"
+                }
+              })
+            ],
+            1
+          ),
           _vm._v(" "),
           _c(
             "div",
             { staticClass: "p-col-12" },
             [
-              _vm._l(_vm.functions, function(func) {
-                return _c(
-                  "div",
-                  { key: func.id, staticClass: "p-field-checkbox" },
-                  [
-                    _c("prime-checkbox", {
-                      attrs: { id: func.id, name: "func", value: func },
-                      model: {
-                        value: _vm.data.functions,
-                        callback: function($$v) {
-                          _vm.$set(_vm.data, "functions", $$v)
-                        },
-                        expression: "data.functions"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("label", { attrs: { for: func.id } }, [
-                      _vm._v(_vm._s(func.name))
+              _c(
+                "prime-accordion",
+                { attrs: { multiple: true, activeIndex: [0, 1, 2, 3, 4] } },
+                [
+                  _c(
+                    "prime-accordiontab",
+                    { attrs: { header: "Basic Information" } },
+                    [
+                      _c("div", { staticClass: "p-grid" }, [
+                        _c(
+                          "div",
+                          { staticClass: "p-field p-col-4" },
+                          [
+                            _c("prime-dropdown", {
+                              attrs: {
+                                options: _vm.brand,
+                                optionLabel: "name",
+                                optionValue: "id",
+                                placeholder: "Brand"
+                              },
+                              model: {
+                                value: _vm.data.brand_id,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.data, "brand_id", $$v)
+                                },
+                                expression: "data.brand_id"
+                              }
+                            })
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "p-field p-col-4" },
+                          [
+                            _c("prime-dropdown", {
+                              attrs: {
+                                options: _vm.type,
+                                optionLabel: "name",
+                                optionValue: "id",
+                                placeholder: "Type"
+                              },
+                              model: {
+                                value: _vm.data.type_id,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.data, "type_id", $$v)
+                                },
+                                expression: "data.type_id"
+                              }
+                            })
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "p-field p-col-4" },
+                          [
+                            _c("prime-dropdown", {
+                              attrs: {
+                                options: _vm.material,
+                                optionLabel: "name",
+                                optionValue: "id",
+                                placeholder: "Material"
+                              },
+                              model: {
+                                value: _vm.data.material_id,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.data, "material_id", $$v)
+                                },
+                                expression: "data.material_id"
+                              }
+                            })
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "p-field p-col-4" },
+                          [
+                            _c("prime-dropdown", {
+                              attrs: {
+                                options: _vm.strapmaterial,
+                                optionLabel: "name",
+                                optionValue: "id",
+                                placeholder: "Strapmaterial"
+                              },
+                              model: {
+                                value: _vm.data.strapmaterial_id,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.data, "strapmaterial_id", $$v)
+                                },
+                                expression: "data.strapmaterial_id"
+                              }
+                            })
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "p-field p-col-4" },
+                          [
+                            _c("prime-dropdown", {
+                              attrs: {
+                                options: _vm.gender,
+                                optionLabel: "name",
+                                optionValue: "id",
+                                placeholder: "Gender"
+                              },
+                              model: {
+                                value: _vm.data.gender_id,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.data, "gender_id", $$v)
+                                },
+                                expression: "data.gender_id"
+                              }
+                            })
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "p-field p-col-4" },
+                          [
+                            _c("prime-inputtext", {
+                              class: { "p-invalid": _vm.hasError("model") },
+                              attrs: {
+                                type: "text",
+                                id: "model",
+                                placeholder: "model"
+                              },
+                              model: {
+                                value: _vm.data.model,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.data, "model", $$v)
+                                },
+                                expression: "data.model"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _vm.hasError("model")
+                              ? _c("small", { staticClass: "p-invalid" }, [
+                                  _vm._v(_vm._s(_vm.hasErrorText("model")))
+                                ])
+                              : _vm._e()
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "p-field p-col-4" },
+                          [
+                            _c("prime-inputtext", {
+                              class: { "p-invalid": _vm.hasError("year") },
+                              attrs: {
+                                type: "text",
+                                id: "year",
+                                placeholder: "year"
+                              },
+                              model: {
+                                value: _vm.data.year,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.data, "year", $$v)
+                                },
+                                expression: "data.year"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _vm.hasError("year")
+                              ? _c("small", { staticClass: "p-invalid" }, [
+                                  _vm._v(_vm._s(_vm.hasErrorText("year")))
+                                ])
+                              : _vm._e()
+                          ],
+                          1
+                        )
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("prime-accordiontab", { attrs: { header: "Bracelet" } }, [
+                    _c("div", { staticClass: "p-grid" }, [
+                      _c(
+                        "div",
+                        { staticClass: "p-field p-col-4" },
+                        [
+                          _c("prime-dropdown", {
+                            attrs: {
+                              options: _vm.strapcolor,
+                              optionLabel: "name",
+                              optionValue: "id",
+                              placeholder: "strapcolor"
+                            },
+                            model: {
+                              value: _vm.data.strapcolor_id,
+                              callback: function($$v) {
+                                _vm.$set(_vm.data, "strapcolor_id", $$v)
+                              },
+                              expression: "data.strapcolor_id"
+                            }
+                          })
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "p-field p-col-4" },
+                        [
+                          _c("prime-dropdown", {
+                            attrs: {
+                              options: _vm.clasp,
+                              optionLabel: "name",
+                              optionValue: "id",
+                              placeholder: "Clasp"
+                            },
+                            model: {
+                              value: _vm.data.clasp_id,
+                              callback: function($$v) {
+                                _vm.$set(_vm.data, "clasp_id", $$v)
+                              },
+                              expression: "data.clasp_id"
+                            }
+                          })
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "p-field p-col-4" },
+                        [
+                          _c("prime-dropdown", {
+                            attrs: {
+                              options: _vm.claspmaterial,
+                              optionLabel: "name",
+                              optionValue: "id",
+                              placeholder: "Claspmaterial"
+                            },
+                            model: {
+                              value: _vm.data.claspmaterial_id,
+                              callback: function($$v) {
+                                _vm.$set(_vm.data, "claspmaterial_id", $$v)
+                              },
+                              expression: "data.claspmaterial_id"
+                            }
+                          })
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "p-field p-col-4" },
+                        [
+                          _c("prime-inputtext", {
+                            class: {
+                              "p-invalid": _vm.hasError("jumper_width")
+                            },
+                            attrs: {
+                              type: "text",
+                              id: "jumper_width",
+                              placeholder: "jumper_width"
+                            },
+                            model: {
+                              value: _vm.data.jumper_width,
+                              callback: function($$v) {
+                                _vm.$set(_vm.data, "jumper_width", $$v)
+                              },
+                              expression: "data.jumper_width"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _vm.hasError("jumper_width")
+                            ? _c("small", { staticClass: "p-invalid" }, [
+                                _vm._v(_vm._s(_vm.hasErrorText("jumper_width")))
+                              ])
+                            : _vm._e()
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "p-field p-col-4" },
+                        [
+                          _c("prime-inputtext", {
+                            class: { "p-invalid": _vm.hasError("clasp_width") },
+                            attrs: {
+                              type: "text",
+                              id: "clasp_width",
+                              placeholder: "clasp_width"
+                            },
+                            model: {
+                              value: _vm.data.clasp_width,
+                              callback: function($$v) {
+                                _vm.$set(_vm.data, "clasp_width", $$v)
+                              },
+                              expression: "data.clasp_width"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _vm.hasError("clasp_width")
+                            ? _c("small", { staticClass: "p-invalid" }, [
+                                _vm._v(_vm._s(_vm.hasErrorText("clasp_width")))
+                              ])
+                            : _vm._e()
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "p-field p-col-4" },
+                        [
+                          _c("prime-inputtext", {
+                            class: {
+                              "p-invalid": _vm.hasError("long_strap_long")
+                            },
+                            attrs: {
+                              type: "text",
+                              id: "long_strap_long",
+                              placeholder: "long_strap_long"
+                            },
+                            model: {
+                              value: _vm.data.long_strap_long,
+                              callback: function($$v) {
+                                _vm.$set(_vm.data, "long_strap_long", $$v)
+                              },
+                              expression: "data.long_strap_long"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _vm.hasError("long_strap_long")
+                            ? _c("small", { staticClass: "p-invalid" }, [
+                                _vm._v(
+                                  _vm._s(_vm.hasErrorText("long_strap_long"))
+                                )
+                              ])
+                            : _vm._e()
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "p-field p-col-4" },
+                        [
+                          _c("prime-inputtext", {
+                            class: {
+                              "p-invalid": _vm.hasError("long_strap_short")
+                            },
+                            attrs: {
+                              type: "text",
+                              id: "long_strap_short",
+                              placeholder: "long_strap_short"
+                            },
+                            model: {
+                              value: _vm.data.long_strap_short,
+                              callback: function($$v) {
+                                _vm.$set(_vm.data, "long_strap_short", $$v)
+                              },
+                              expression: "data.long_strap_short"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _vm.hasError("long_strap_short")
+                            ? _c("small", { staticClass: "p-invalid" }, [
+                                _vm._v(
+                                  _vm._s(_vm.hasErrorText("long_strap_short"))
+                                )
+                              ])
+                            : _vm._e()
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "p-field p-col-4" },
+                        [
+                          _c("prime-inputtext", {
+                            class: {
+                              "p-invalid": _vm.hasError("strength_strap")
+                            },
+                            attrs: {
+                              type: "text",
+                              id: "strength_strap",
+                              placeholder: "strength_strap"
+                            },
+                            model: {
+                              value: _vm.data.strength_strap,
+                              callback: function($$v) {
+                                _vm.$set(_vm.data, "strength_strap", $$v)
+                              },
+                              expression: "data.strength_strap"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _vm.hasError("strength_strap")
+                            ? _c("small", { staticClass: "p-invalid" }, [
+                                _vm._v(
+                                  _vm._s(_vm.hasErrorText("strength_strap"))
+                                )
+                              ])
+                            : _vm._e()
+                        ],
+                        1
+                      )
                     ])
-                  ],
-                  1
-                )
-              }),
-              _vm._v("13\n        "),
-              _vm.hasError("functions")
-                ? _c("small", { staticClass: "p-invalid" }, [
-                    _vm._v(_vm._s(_vm.hasErrorText("functions")))
+                  ]),
+                  _vm._v(" "),
+                  _c("prime-accordiontab", { attrs: { header: "Case" } }, [
+                    _c("div", { staticClass: "p-grid" }, [
+                      _c(
+                        "div",
+                        { staticClass: "p-field p-col-4" },
+                        [
+                          _c("prime-dropdown", {
+                            attrs: {
+                              options: _vm.glass,
+                              optionLabel: "name",
+                              optionValue: "id",
+                              placeholder: "glass"
+                            },
+                            model: {
+                              value: _vm.data.glass_id,
+                              callback: function($$v) {
+                                _vm.$set(_vm.data, "glass_id", $$v)
+                              },
+                              expression: "data.glass_id"
+                            }
+                          })
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "p-field p-col-4" },
+                        [
+                          _c("prime-dropdown", {
+                            attrs: {
+                              options: _vm.material,
+                              optionLabel: "name",
+                              optionValue: "id",
+                              placeholder: "material"
+                            },
+                            model: {
+                              value: _vm.data.bezelmaterial_id,
+                              callback: function($$v) {
+                                _vm.$set(_vm.data, "bezelmaterial_id", $$v)
+                              },
+                              expression: "data.bezelmaterial_id"
+                            }
+                          })
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "p-field p-col-4" },
+                        [
+                          _c("prime-dropdown", {
+                            attrs: {
+                              options: _vm.numbersface,
+                              optionLabel: "name",
+                              optionValue: "id",
+                              placeholder: "numbersface"
+                            },
+                            model: {
+                              value: _vm.data.numbersface_id,
+                              callback: function($$v) {
+                                _vm.$set(_vm.data, "numbersface_id", $$v)
+                              },
+                              expression: "data.numbersface_id"
+                            }
+                          })
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "p-field p-col-4" },
+                        [
+                          _c("prime-dropdown", {
+                            attrs: {
+                              options: _vm.waterresistant,
+                              optionLabel: "name",
+                              optionValue: "id",
+                              placeholder: "waterresistant"
+                            },
+                            model: {
+                              value: _vm.data.waterresistant_id,
+                              callback: function($$v) {
+                                _vm.$set(_vm.data, "waterresistant_id", $$v)
+                              },
+                              expression: "data.waterresistant_id"
+                            }
+                          })
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "p-field p-col-4" },
+                        [
+                          _c("prime-dropdown", {
+                            attrs: {
+                              options: _vm.face,
+                              optionLabel: "name",
+                              optionValue: "id",
+                              placeholder: "face"
+                            },
+                            model: {
+                              value: _vm.data.face_id,
+                              callback: function($$v) {
+                                _vm.$set(_vm.data, "face_id", $$v)
+                              },
+                              expression: "data.face_id"
+                            }
+                          })
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "p-field p-col-4" },
+                        [
+                          _c("prime-inputtext", {
+                            class: {
+                              "p-invalid": _vm.hasError("diameter_one")
+                            },
+                            attrs: {
+                              type: "text",
+                              id: "diameter_one",
+                              placeholder: "diameter_one"
+                            },
+                            model: {
+                              value: _vm.data.diameter_one,
+                              callback: function($$v) {
+                                _vm.$set(_vm.data, "diameter_one", $$v)
+                              },
+                              expression: "data.diameter_one"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _vm.hasError("diameter_one")
+                            ? _c("small", { staticClass: "p-invalid" }, [
+                                _vm._v(_vm._s(_vm.hasErrorText("diameter_one")))
+                              ])
+                            : _vm._e()
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "p-field p-col-4" },
+                        [
+                          _c("prime-inputtext", {
+                            class: {
+                              "p-invalid": _vm.hasError("diameter_two")
+                            },
+                            attrs: {
+                              type: "text",
+                              id: "diameter_two",
+                              placeholder: "diameter_two"
+                            },
+                            model: {
+                              value: _vm.data.diameter_two,
+                              callback: function($$v) {
+                                _vm.$set(_vm.data, "diameter_two", $$v)
+                              },
+                              expression: "data.diameter_two"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _vm.hasError("diameter_two")
+                            ? _c("small", { staticClass: "p-invalid" }, [
+                                _vm._v(_vm._s(_vm.hasErrorText("diameter_two")))
+                              ])
+                            : _vm._e()
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "p-field p-col-4" },
+                        [
+                          _c("prime-inputtext", {
+                            class: {
+                              "p-invalid": _vm.hasError("diameter_height")
+                            },
+                            attrs: {
+                              type: "text",
+                              id: "diameter_height",
+                              placeholder: "diameter_height"
+                            },
+                            model: {
+                              value: _vm.data.diameter_height,
+                              callback: function($$v) {
+                                _vm.$set(_vm.data, "diameter_height", $$v)
+                              },
+                              expression: "data.diameter_height"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _vm.hasError("diameter_height")
+                            ? _c("small", { staticClass: "p-invalid" }, [
+                                _vm._v(
+                                  _vm._s(_vm.hasErrorText("diameter_height"))
+                                )
+                              ])
+                            : _vm._e()
+                        ],
+                        1
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("prime-accordiontab", { attrs: { header: "Caliber" } }, [
+                    _c("div", { staticClass: "p-grid" }, [
+                      _c(
+                        "div",
+                        { staticClass: "p-field p-col-4" },
+                        [
+                          _c("prime-inputtext", {
+                            class: { "p-invalid": _vm.hasError("caliber") },
+                            attrs: {
+                              type: "text",
+                              id: "caliber",
+                              placeholder: "caliber"
+                            },
+                            model: {
+                              value: _vm.data.caliber,
+                              callback: function($$v) {
+                                _vm.$set(_vm.data, "caliber", $$v)
+                              },
+                              expression: "data.caliber"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _vm.hasError("caliber")
+                            ? _c("small", { staticClass: "p-invalid" }, [
+                                _vm._v(_vm._s(_vm.hasErrorText("caliber")))
+                              ])
+                            : _vm._e()
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "p-field p-col-4" },
+                        [
+                          _c("prime-inputtext", {
+                            class: {
+                              "p-invalid": _vm.hasError("base_caliber")
+                            },
+                            attrs: {
+                              type: "text",
+                              id: "base_caliber",
+                              placeholder: "base_caliber"
+                            },
+                            model: {
+                              value: _vm.data.base_caliber,
+                              callback: function($$v) {
+                                _vm.$set(_vm.data, "base_caliber", $$v)
+                              },
+                              expression: "data.base_caliber"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _vm.hasError("base_caliber")
+                            ? _c("small", { staticClass: "p-invalid" }, [
+                                _vm._v(_vm._s(_vm.hasErrorText("base_caliber")))
+                              ])
+                            : _vm._e()
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "p-field p-col-4" },
+                        [
+                          _c("prime-inputtext", {
+                            class: {
+                              "p-invalid": _vm.hasError("power_reserve")
+                            },
+                            attrs: {
+                              type: "text",
+                              id: "power_reserve",
+                              placeholder: "power_reserve"
+                            },
+                            model: {
+                              value: _vm.data.power_reserve,
+                              callback: function($$v) {
+                                _vm.$set(_vm.data, "power_reserve", $$v)
+                              },
+                              expression: "data.power_reserve"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _vm.hasError("power_reserve")
+                            ? _c("small", { staticClass: "p-invalid" }, [
+                                _vm._v(
+                                  _vm._s(_vm.hasErrorText("power_reserve"))
+                                )
+                              ])
+                            : _vm._e()
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "p-field p-col-4" },
+                        [
+                          _c("prime-inputtext", {
+                            class: {
+                              "p-invalid": _vm.hasError("number_stars")
+                            },
+                            attrs: {
+                              type: "text",
+                              id: "number_stars",
+                              placeholder: "number_stars"
+                            },
+                            model: {
+                              value: _vm.data.number_stars,
+                              callback: function($$v) {
+                                _vm.$set(_vm.data, "number_stars", $$v)
+                              },
+                              expression: "data.number_stars"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _vm.hasError("number_stars")
+                            ? _c("small", { staticClass: "p-invalid" }, [
+                                _vm._v(_vm._s(_vm.hasErrorText("number_stars")))
+                              ])
+                            : _vm._e()
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "p-field p-col-4" },
+                        [
+                          _c("prime-inputtext", {
+                            class: { "p-invalid": _vm.hasError("oscillation") },
+                            attrs: {
+                              type: "text",
+                              id: "oscillation",
+                              placeholder: "oscillation"
+                            },
+                            model: {
+                              value: _vm.data.oscillation,
+                              callback: function($$v) {
+                                _vm.$set(_vm.data, "oscillation", $$v)
+                              },
+                              expression: "data.oscillation"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _vm.hasError("oscillation")
+                            ? _c("small", { staticClass: "p-invalid" }, [
+                                _vm._v(_vm._s(_vm.hasErrorText("oscillation")))
+                              ])
+                            : _vm._e()
+                        ],
+                        1
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("prime-accordiontab", { attrs: { header: "Functions" } }, [
+                    _c("div", { staticClass: "p-grid" }, [
+                      _c(
+                        "div",
+                        { staticClass: "p-col-12" },
+                        [
+                          _vm._l(_vm.functions, function(func) {
+                            return _c(
+                              "div",
+                              { key: func.id, staticClass: "p-field-checkbox" },
+                              [
+                                _c("prime-checkbox", {
+                                  attrs: {
+                                    id: func.id,
+                                    name: "func",
+                                    value: func
+                                  },
+                                  model: {
+                                    value: _vm.data.functions,
+                                    callback: function($$v) {
+                                      _vm.$set(_vm.data, "functions", $$v)
+                                    },
+                                    expression: "data.functions"
+                                  }
+                                }),
+                                _vm._v(" "),
+                                _c("label", { attrs: { for: func.id } }, [
+                                  _vm._v(_vm._s(func.name))
+                                ])
+                              ],
+                              1
+                            )
+                          }),
+                          _vm._v(" "),
+                          _vm.hasError("functions")
+                            ? _c("small", { staticClass: "p-invalid" }, [
+                                _vm._v(_vm._s(_vm.hasErrorText("functions")))
+                              ])
+                            : _vm._e()
+                        ],
+                        2
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("prime-accordiontab", { attrs: { header: "Others" } }, [
+                    _c("div", { staticClass: "p-grid" }, [
+                      _c(
+                        "div",
+                        { staticClass: "p-col-12" },
+                        [
+                          _vm._l(_vm.others, function(other) {
+                            return _c(
+                              "div",
+                              {
+                                key: other.id,
+                                staticClass: "p-field-checkbox"
+                              },
+                              [
+                                _c("prime-checkbox", {
+                                  attrs: {
+                                    id: other.id,
+                                    name: "other",
+                                    value: other
+                                  },
+                                  model: {
+                                    value: _vm.data.others,
+                                    callback: function($$v) {
+                                      _vm.$set(_vm.data, "others", $$v)
+                                    },
+                                    expression: "data.others"
+                                  }
+                                }),
+                                _vm._v(" "),
+                                _c("label", { attrs: { for: other.id } }, [
+                                  _vm._v(_vm._s(other.name))
+                                ])
+                              ],
+                              1
+                            )
+                          }),
+                          _vm._v(" "),
+                          _vm.hasError("others")
+                            ? _c("small", { staticClass: "p-invalid" }, [
+                                _vm._v(_vm._s(_vm.hasErrorText("others")))
+                              ])
+                            : _vm._e()
+                        ],
+                        2
+                      )
+                    ])
                   ])
-                : _vm._e()
+                ],
+                1
+              )
             ],
-            2
+            1
           ),
           _vm._v(" "),
           _vm._m(0)
